@@ -1,0 +1,46 @@
+[37mDEBU[0m[02 Apr 20 22:35 -0500] PreRun                                        [37marguments[0m=[] [37mcommand[0m=deploy
+[37mDEBU[0m[02 Apr 20 22:35 -0500] configure debug middleware                   
+[37mDEBU[0m[02 Apr 20 22:35 -0500] configure logging middleware                 
+[37mDEBU[0m[02 Apr 20 22:35 -0500] setup logger middleware: panic               
+[37mDEBU[0m[02 Apr 20 22:35 -0500] configure auth middleware                    
+[37mDEBU[0m[02 Apr 20 22:35 -0500] setup credentials                             [37mcredentials[0m=0x146b000
+[37mDEBU[0m[02 Apr 20 22:35 -0500] configure client middleware                  
+[37mDEBU[0m[02 Apr 20 22:35 -0500] setup API endpoint                            [37mendpoint[0m="https://api.netlify.com"
+[37mDEBU[0m[02 Apr 20 22:35 -0500] configure site middleware                    
+[37mDEBU[0m[02 Apr 20 22:35 -0500] Parsed configuration: {Settings:{ID:a1edbf92-deaf-4e06-828a-04a4f5eddd1a Path:} Build:{Publish: Functions:} Redirects:[] root:/Users/nyeraeldomiaty/Projects/nyoandnura/nandn/starter-gatsby-blog filePath:netlify.toml} 
+[37mDEBU[0m[02 Apr 20 22:35 -0500] deploying site                                [37mdraft[0m=false [37mpath[0m=public [37msite[0m=a1edbf92-deaf-4e06-828a-04a4f5eddd1a
+[37mDEBU[0m[02 Apr 20 22:35 -0500] Starting to deploy files                      [37mdeploy_files[0m=35 [37msite_id[0m=a1edbf92-deaf-4e06-828a-04a4f5eddd1a
+[37mDEBU[0m[02 Apr 20 22:35 -0500] POST /api/v1/sites/a1edbf92-deaf-4e06-828a-04a4f5eddd1a/deploys HTTP/1.1
+Host: api.netlify.com
+User-Agent: netlifyctl
+Content-Length: 2834
+Accept: application/json
+Authorization: Bearer 0e579344a836754bc816753ccaf1aea188d9fd01cd5291b746d64dcfb42d43a1
+Content-Type: application/json
+Accept-Encoding: gzip
+
+{"files":{"app-a926f1b5441eb0c2d9da.js":"dc077142a58c2a9ed40ac61957df2273d460e2ab","app-a926f1b5441eb0c2d9da.js.map":"8f43776e086c95bb4e9c0a70e2a9502649d9d0d5","avenir-400.woff2":"7bc5c8218446a84006126af7b85da0ed2c9ce60a","blog/automate-with-webhooks/index.html":"a9d7edf459b2be9f74f96fc94867c6d87c352155","blog/dfasldfjadslkfjalsfas/index.html":"29161a3d4be2a2dcf3324b1d25fb3b14069e4c64","blog/hello-world/index.html":"cd627c964a946ece7ad4eba1b99d34d77ef074de","blog/index.html":"809f9ce42372fc40ba1b487a2c5dcf1a97e5b530","blog/static-sites-are-great/index.html":"d66b476e9eb253274aa435ca1b5bc294499ae738","chunk-map.json":"22e7cbd7f8ce6b6ec8b898036e876457880e2e7b","commons-e5ab441cbf991f6a0a38.js":"46cea98ab58ac0da16a88217b58a634352e692d1","commons-e5ab441cbf991f6a0a38.js.map":"14d7d1bf78447b018f67236452ad7163bf84cc9d","component---src-pages-blog-js-c26a3325c8670538736f.js":"6bf0929ddaf5ea2cdbd552841d7d626658eae16f","component---src-pages-blog-js-c26a3325c8670538736f.js.map":"b399f6a44d2386d9e1bb52019830d23019bf1369","component---src-pages-index-js-5cebed8c20f2e24f430d.js":"9ce6d5dbd05141186831a8ee97e6bb966ca2e242","component---src-pages-index-js-5cebed8c20f2e24f430d.js.map":"142e4cfd6d6db1e1fe3ddbbe6586a80333bfce7a","component---src-templates-blog-post-js-527ff37bbe32569172ed.js":"d67498c2b2270419ee6312ba88542deab88d2657","component---src-templates-blog-post-js-527ff37bbe32569172ed.js.map":"a102ba537d4ffe27a53772ef74191a20625bb2ca","favicon.ico":"92cbd806ca421aa2c9ff5e1ff76bbc20913a2f81","index.html":"630ccd0f26c0a4517474ddeca56dea8c82b4be0c","netlify.toml":"fe23c5c0ce1960b89f09a4cc5eaa78224c4b31e2","page-data/app-data.json":"d97f5d1ee13af33f09b46b43e5afd4f7f5b130bd","page-data/blog/automate-with-webhooks/page-data.json":"ee6fe976cd132a51409bc645b5511e9589f67da3","page-data/blog/dfasldfjadslkfjalsfas/page-data.json":"f9e97d77d0c16da5facf26e1d54c1604d5a9b598","page-data/blog/hello-world/page-data.json":"a486d1a5c3194a20753696c5f8afa36e1cb82cf4","page-data/blog/page-data.json":"9b737cb96b218b34a380942e11fe9ac354757181","page-data/blog/static-sites-are-great/page-data.json":"6f52dfecab85d595e21627da333cb79f2d0f3826","page-data/dev-404-page/page-data.json":"e054fb6e4a70d90d99ef1dabed9f6b505723cd5f","page-data/index/page-data.json":"e6d3db581d94a02970d1bfdaed4db4da0494ae6a","robots.txt":"c47ccf1a49c24cc5842430aa75c72ef491292412","styles-79c6491002273c1036b2.js":"d1b7c2c1fb96c47494e7f45132595e93701bc0ff","styles-79c6491002273c1036b2.js.map":"2010eb7a58e5228ae6e79117dba6dd99c25a7e84","styles.69176174422e750810bb.css":"d018830fb59df8995684721c94ebb3847bcdcffa","webpack-runtime-34812a7a49efa51dd218.js":"c612f9ce030e96e80fc46a6d6db8426349353d49","webpack-runtime-34812a7a49efa51dd218.js.map":"56c4a1329ff3daef506f7278dc4cc9f09920d208","webpack.stats.json":"bf8f87d66e48973e699554b89999195c1b212d7e"}}
+
+ 
+[37mDEBU[0m[02 Apr 20 22:35 -0500] HTTP/1.1 401 Unauthorized
+Content-Length: 38
+Alt-Svc: clear
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+Date: Fri, 03 Apr 2020 03:35:52 GMT
+Retry-After: 2020-04-03 03:36:52 UTC
+Strict-Transport-Security: max-age=31536000
+Vary: Origin
+Via: 1.1 google
+X-Content-Type-Options: nosniff
+X-Frame-Options: ALLOWALL
+X-Nf-Srv-Version: 9e395ef31a94ac84699a175bab80587f20091f83
+X-Ratelimit-Limit: 100000000
+X-Ratelimit-Remaining: 99999999
+X-Ratelimit-Reset: 2020-04-03 03:36:52 UTC
+X-Request-Id: 865351c3-9b6c-462b-af42-8189ee7b9405
+X-Runtime: 0.033278
+
+{"code":401,"message":"Access Denied"}
+ 
+[31mERRO[0m[02 Apr 20 22:35 -0500] command failed                                [31merror[0m="[POST /sites/{site_id}/deploys][401] createSiteDeploy default  &{Code:401 Message:Access Denied}"
