@@ -5,9 +5,43 @@ import styles from "../shop.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class Neldochamp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      countc: 0,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick(e) {
+    e.preventDefault();
+    this.setState({
+      countc: this.state.countc + 1,
+    });
+    var element = document.getElementById("cartcount");
+    element.classList.add("mystyle");
+  }
   render() {
+    const mystyle = {
+      color: "white",
+      backgroundColor: "red",
+      padding: "10px",
+      paddingLeft: "12px",
+      borderRadius: "50%",
+      fontSize: "8px",
+      marginBottom: "150px",
+      position: "absolute",
+      paddingRight: "12px",
+      marginTop: "-82px",
+      marginLeft: "82vw",
+    };
+    const nostyle = {
+      display: "none",
+    };
     return (
       <Layout location={this.props.location}>
+        <span style={this.state.countc !== 0 ? mystyle : nostyle}>
+          {this.state.countc}
+        </span>
         <nav className={styles.subnav}>
           <div className="container">
             <Link
@@ -41,8 +75,8 @@ class Neldochamp extends React.Component {
           <span>
             Price: <i>$4,999</i>
           </span>
-          <Link to="/cart/">
-          <button id={styles.ctabtn} className="btn text-white btn-lg">
+          <Link to="#">
+          <button id={styles.ctabtn} onClick={(e) => this.handleClick(e)} className="btn text-white btn-lg">
             Add to Cart
           </button></Link>
           <br /> <br />
