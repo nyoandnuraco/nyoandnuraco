@@ -17,13 +17,13 @@
     margin-bottom:50px;
   }
   
- .img-box{
+ .imgbox{
     width:150px;
     height: 100px; 
     background-color: #d8d8d8;
     display: inline-block;
     float:left;
-    margin:25px;
+    margin-right: 25px;
  }
 
  .description{
@@ -36,10 +36,6 @@
      color:#ffffff;
  }
 
- .navbar-brand{
-     padding-left: 50px;
-     padding-right: 50px;
- }
  #active{
      background-color:#d8d8d8;
      color:#000000;

@@ -10,13 +10,13 @@ class Neldo extends React.Component {
       <Layout location={this.props.location}>
          <nav className={styles.subnav}>
         <div className="container">
-        <Link id={styles.sublink} className="navbar-brand" to="/shop/neldolight">
+        <Link className="navbar-brand" to="/shop/neldolight">
             Neldo Light
         </Link> 
         <Link id={styles.active} className="navbar-brand" to="/shop/neldo">
             Neldo 
         </Link>
-        <Link id={styles.sublinklast} className="navbar-brand" to="/shop/neldochamp">
+        <Link className="navbar-brand" to="/shop/neldochamp">
             Neldo Champ
         </Link>
         </div>
@@ -24,7 +24,7 @@ class Neldo extends React.Component {
 <div class="wrapper">
      <h2>Neldo</h2>
 
-               <div class="img-box"></div>
+               <div className={styles.imgbox}></div>
                 <div class="description">Must have top notch maintainable custom made websites to fit your needs</div>
              <span>$2,500</span> 
                 <br/>  <br/>
