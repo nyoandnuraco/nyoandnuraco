@@ -1,22 +1,22 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../../components/layout'
-
+import styles from '../shop.module.css'
 
 class Neldo extends React.Component {
   render() {
   
     return (
       <Layout location={this.props.location}>
-         <nav>
+         <nav className={styles.subnav}>
         <div className="container">
-        <Link className="navbar-brand" to="/shop/neldolight">
+        <Link id={styles.sublink} className="navbar-brand" to="/shop/neldolight">
             Neldo Light
         </Link> 
-        <Link className="navbar-brand" to="/shop/neldo">
+        <Link id={styles.active} className="navbar-brand" to="/shop/neldo">
             Neldo 
         </Link>
-        <Link className="navbar-brand" to="/shop/neldochamp">
+        <Link id={styles.sublinklast} className="navbar-brand" to="/shop/neldochamp">
             Neldo Champ
         </Link>
         </div>
@@ -29,7 +29,7 @@ class Neldo extends React.Component {
              <span>$2,500</span> 
                 <br/>  <br/>
 
-   <div class="cta-btn">Add to Cart</div> 
+   <div id={styles.ctabtn} className="btn text-white btn-lg">Add to Cart</div> 
     <h3>Details</h3>
     <p>Complete Custom made Brand Style Guide which includes:</p>
     <ul>

@@ -30,16 +30,26 @@
      padding:20px;
  }
 
- .cta-btn{
+ #ctabtn{
      float:right;
- }
- button{
      background: #0146c9;
+     color:#ffffff;
  }
 
  .navbar-brand{
-     padding-left: 25px;
-     padding-right: 25px;
+     padding-left: 50px;
+     padding-right: 50px;
  }
- 
- 
+ #active{
+     background-color:#d8d8d8;
+     color:#000000;
+     opacity:.68;
+     padding-left:25px;
+     padding-right:25px;
+     margin-left:25px;
+     margin-right:25px;
+ }
+ .subnav{
+     border:2px solid #d8d8d8;
+     text-align:center;
+ }
