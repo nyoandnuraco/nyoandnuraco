@@ -29,7 +29,8 @@ class Neldo extends React.Component {
 
           <br />  <br />   <br />  <br />
           <span>Price: <i>$2,999</i></span>
-          <div id={styles.ctabtn} className="btn text-white btn-lg">Add to Cart</div>
+          <Link to="/cart/">
+          <button id={styles.ctabtn} className="btn text-white btn-lg">Add to Cart</button></Link>
           <br />  <br /><br />  <br />
           <h4 id={styles.detailssubheader}>Details:</h4>
           <br /> 

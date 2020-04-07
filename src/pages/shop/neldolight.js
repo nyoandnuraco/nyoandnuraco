@@ -40,9 +40,11 @@ class Neldolight extends React.Component {
           <span>
             Price: <i>$699</i>
           </span>
-          <div id={styles.ctabtn} className="btn text-white btn-lg">
+          <Link to="/cart/">
+          <button id={styles.ctabtn} className="btn text-white btn-lg">
             Add to Cart
-          </div>
+          </button>
+          </Link>
           <br /> <br />
           <br /> <br />
           <h4 className={styles.detailssubheader}>Details:</h4><br/>
