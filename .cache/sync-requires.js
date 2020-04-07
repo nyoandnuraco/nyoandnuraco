@@ -6,6 +6,7 @@ const preferDefault = m => m && m.default || m
 
 exports.components = {
   "component---src-templates-blog-post-js": hot(preferDefault(require("/Users/nyeraeldomiaty/Documents/GitHub/nn/nyoandnuraco/src/templates/blog-post.js"))),
+  "component---cache-dev-404-page-js": hot(preferDefault(require("/Users/nyeraeldomiaty/Documents/GitHub/nn/nyoandnuraco/.cache/dev-404-page.js"))),
   "component---src-pages-blog-js": hot(preferDefault(require("/Users/nyeraeldomiaty/Documents/GitHub/nn/nyoandnuraco/src/pages/blog.js"))),
   "component---src-pages-cart-js": hot(preferDefault(require("/Users/nyeraeldomiaty/Documents/GitHub/nn/nyoandnuraco/src/pages/cart.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/nyeraeldomiaty/Documents/GitHub/nn/nyoandnuraco/src/pages/index.js"))),

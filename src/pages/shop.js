@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styles from './shop.module.css'
 import Layout from '../components/layout'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Shop extends React.Component {
   render() {

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../../components/layout'
 import styles from '../shop.module.css'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 class Neldo extends React.Component {
   render() {
   
