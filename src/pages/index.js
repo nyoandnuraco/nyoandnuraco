@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import get from "lodash/get";
 import Helmet from "react-helmet";
 //import Hero from '../components/hero'
+import { Link } from 'gatsby'
 import Layout from "../components/layout";
 import ArticlePreview from "../components/article-preview";
 import styles from "./index.module.css";
@@ -27,9 +28,10 @@ class RootIndex extends React.Component {
           </div>
           <div className="wrapper">
           <p id={styles.abvfldcpy} className={"article-list"}>Must have top notch maintainable and custom made to fit your business needs.</p></div>
+          <Link to="/shop/">
           <button id={styles.maincta} className="btn text-white btn-lg">
               Shop Now
-            </button><br/><br/>
+            </button></Link><br/><br/>
           <div className="wrapper">
             <h2 className="section-headline">Best Deals</h2>
  
@@ -37,9 +39,10 @@ class RootIndex extends React.Component {
               Free website maintenence for two months included with purchase of
               Neldo or Neldo Champ Packages
             </p><br/><br/>
+            <Link to="/shop/">
             <button id={styles.secondarycta} className="btn btn-lg">
               Shop Now
-            </button>
+            </button></Link>
           </div>
         
             <br/>
@@ -53,9 +56,11 @@ class RootIndex extends React.Component {
 <img className={styles.clientlogo} alt="logo" src={logo} />
 <img className={styles.clientlogo} alt="logo" src={logo} />
 <br/><br/><br/><br/><br/><br/>
+<Link to="/ourwork/">
             <button id={styles.secondarycta} className="btn btn-lg">
             View More
             </button>
+            </Link>
             <br/>
           </div>
      
@@ -71,9 +76,11 @@ class RootIndex extends React.Component {
                 );
               })}
             </ul>
+            <Link to="/blog/">
             <button id={styles.secondarycta} className="btn btn-lg">
             View More
             </button>
+            </Link>
           </div>
         </div>
       </Layout>
