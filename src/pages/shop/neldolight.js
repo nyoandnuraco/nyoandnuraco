@@ -5,9 +5,48 @@ import styles from "../shop.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class Neldolight extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      countl: 0,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick(e) {
+    e.preventDefault();
+    this.setState({
+      countl: this.state.countl + 1,
+    });
+    var element = document.getElementById("cartcount");
+    element.classList.add("mystyle");
+    var c = window.confirm('Would you like to Checkout? Otherwise Press Cancel to Continue Browsing.');
+    if(c){
+      return window.location.href = "/cart/"
+    }else{
+      return window.location.href = "/shop/"
+    }  }
   render() {
+    const mystyle = {
+      color: "white",
+      backgroundColor: "red",
+      padding: "10px",
+      paddingLeft: "12px",
+      borderRadius: "50%",
+      fontSize: "8px",
+      marginBottom: "150px",
+      position: "absolute",
+      paddingRight: "12px",
+      marginTop: "-82px",
+      marginLeft: "82vw",
+    };
+    const nostyle = {
+      display: "none",
+    };
     return (
       <Layout location={this.props.location}>
+          <span style={this.state.countl !== 0 ? mystyle : nostyle}>
+          {this.state.countl}
+        </span>
         <nav className={styles.subnav}>
           <div className="container">
             <Link
@@ -41,7 +80,7 @@ class Neldolight extends React.Component {
             Price: <i>$699</i>
           </span>
           <Link to="/cart/">
-          <button id={styles.ctabtn} className="btn text-white btn-lg">
+          <button onClick={(e) => this.handleClick(e)} id={styles.ctabtn} className="btn text-white btn-lg">
             Add to Cart
           </button>
           </Link>
