@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styles from './navigation.module.css'
 import logo from './nyoandnuralogo.png';
-import icon from './shopping-cart-icon.jpg';
+import icon from './shopping-cart-icon.png';
 export default () => (
   <nav className={styles.mainnav} role="navigation">
     <ul className={styles.navigation}>
@@ -19,7 +19,11 @@ export default () => (
         <Link to="/blog/">Blog</Link>
       </li>
       <li className={styles.navigationItem}>
-        <Link to="/cart/"><img alt="cart" className="cart-img" height="100%" width="100%" src={icon}/></Link>
+        <Link to="/cart/">
+<div className={styles.cartItems}>
+          <img alt="cart" className={styles.cartimg} height="100%" width="100%" src={icon}/>
+          <span className={styles.cartcount}>1</span></div>
+        </Link>
       </li>
     </ul>
   </nav>

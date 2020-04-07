@@ -21,10 +21,37 @@
 
  #ctabtn{
      float:right;
-     background: #0146c9;
+     background-color:#FF9000;
      color:#ffffff;
+     border-radius:25px;
+     margin-left:25px;
+     margin-right:25px;
+     padding-left:25px;
+     padding-right:25px;
+     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+     margin-bottom:50px;
+     text-transform:uppercase;
+     font-size:14px;
+     font-weight:medium;
+     margin-top:25px;
+     
  }
-
+ #maincta{
+  background-color:#FF9000;
+  color:#ffffff;
+  border-radius:25px;
+  margin-left:25px;
+  margin-right:25px;
+  padding-left:25px;
+  padding-right:25px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin-bottom:50px;
+  text-transform:uppercase;
+  font-size:14px;
+  font-weight:medium;
+  margin-top:25px;
+  
+}
  #active{
      background-color:#d8d8d8;
      color:#000000;
@@ -61,3 +88,4 @@
     line-height:1.1;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
+
