@@ -6,39 +6,33 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Shop extends React.Component {
   render() {
-  
     return (
       <Layout location={this.props.location}>
-            <br/>
-      
-          <div className={styles.hero}><h1 className={styles.landingheader}>Shop</h1></div>
-     
-          <div className={styles.plcontainer}>
-          <hr/>
-       <Link to="/shop/neldolight">
-         <h3>Neldo Light</h3>
-         <p>dsfasdfafdasfsadfasfdas</p>
-         <span>$2500</span>
-       </Link>
-   
-       <hr/>
-      
-       <Link to="/shop/neldo">
-          <h3>Neldo</h3>
-          <p>dsfasdfafdasfsadfasfdas</p>
-          <span>$2500</span>
-      </Link>
-   
-       <hr/>
-  
-       <Link to="/shop/neldochamp">
-          <h3>Neldo Champ</h3>
-          <p>dsfasdfafdasfsadfasfdas</p>
-          <span>$2500</span>
-       </Link>
-    
-       <hr/>
-       </div>
+        <br />
+        <div className={styles.hero}>
+          <h1 className={styles.landingheader}>Shop</h1>
+        </div>
+        <div className={styles.plcontainer}>
+          <hr />
+          <Link to="/shop/neldolight">
+            <h3>Neldo Light</h3>
+            <p>dsfasdfafdasfsadfasfdas</p>
+            <span>$699</span>
+          </Link>
+          <hr />
+          <Link to="/shop/neldo">
+            <h3>Neldo</h3>
+            <p>dsfasdfafdasfsadfasfdas</p>
+            <span>$2999</span>
+          </Link>
+          <hr />
+          <Link to="/shop/neldochamp">
+            <h3>Neldo Champ</h3>
+            <p>dsfasdfafdasfsadfasfdas</p>
+            <span>$4999</span>
+          </Link>
+          <hr />
+        </div>
       </Layout>
     )
   }
