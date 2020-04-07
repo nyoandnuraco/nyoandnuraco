@@ -3,11 +3,11 @@ import { graphql } from "gatsby";
 import get from "lodash/get";
 import Helmet from "react-helmet";
 //import Hero from '../components/hero'
-import { Link } from 'gatsby'
+import { Link } from "gatsby";
 import Layout from "../components/layout";
 import ArticlePreview from "../components/article-preview";
 import styles from "./index.module.css";
-import logo from '../components/nyoandnuralogo.png'
+import logo from "../components/nyoandnuralogo.png";
 class RootIndex extends React.Component {
   render() {
     const siteTitle = get(this, "props.data.site.siteMetadata.title");
@@ -22,51 +22,67 @@ class RootIndex extends React.Component {
           <div className={styles.hero}>
             <h1 className={styles.landingheader}>
               NYO & <br />
-              NURA <br/> COMPANY
+              NURA <br /> COMPANY
             </h1>
-           
           </div>
           <div className="wrapper">
-          <p id={styles.abvfldcpy} className={"article-list"}>Must have top notch maintainable and custom made to fit your business needs.</p></div>
+            <p id={styles.abvfldcpy} className={"article-list"}>
+              Must have top notch maintainable and custom made to fit your
+              business needs.
+            </p>
+          </div>
           <Link to="/shop/">
-          <button id={styles.maincta} className="btn text-white btn-lg">
+            <button id={styles.maincta} className="btn text-white btn-lg">
               Shop Now
-            </button></Link><br/><br/>
+            </button>
+          </Link>
+          <br />
+          <br />
           <div className="wrapper">
             <h2 className="section-headline">Best Deals</h2>
- 
+
             <p id={styles.psubheader} className="article-list">
               Free website maintenence for two months included with purchase of
               Neldo or Neldo Champ Packages
-            </p><br/><br/>
+            </p>
+            <br />
+            <br />
             <Link to="/shop/">
-            <button id={styles.secondarycta} className="btn btn-lg">
-              Shop Now
-            </button></Link>
-          </div>
-        
-            <br/>
-            <div className="wrapper">
-            <h2 className="section-headline">Our Clients</h2>
-           
-            <p id={styles.pclientcpy} className="article-list">A few of our customers...
-            </p><br/>
-<img className={styles.clientlogo} alt="logo" src={logo} />
-<img className={styles.clientlogo} alt="logo" src={logo} />
-<img className={styles.clientlogo} alt="logo" src={logo} />
-<img className={styles.clientlogo} alt="logo" src={logo} />
-<br/><br/><br/><br/><br/><br/>
-<Link to="/ourwork/">
-            <button id={styles.secondarycta} className="btn btn-lg">
-            View More
-            </button>
+              <button id={styles.secondarycta} className="btn btn-lg">
+                Shop Now
+              </button>
             </Link>
-            <br/>
           </div>
-     
+
+          <br />
           <div className="wrapper">
-            <h2 className="section-headline">Recent articles</h2>
-   
+            <h2 className="section-headline">Our Clients</h2>
+
+            <p id={styles.pclientcpy} className="article-list">
+              A few of our customers...
+            </p>
+            <br />
+            <img className={styles.clientlogo} alt="logo" src={logo} />
+            <img className={styles.clientlogo} alt="logo" src={logo} />
+            <img className={styles.clientlogo} alt="logo" src={logo} />
+            <img className={styles.clientlogo} alt="logo" src={logo} />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <Link to="/ourwork/">
+              <button id={styles.secondarycta} className="btn btn-lg">
+                View More
+              </button>
+            </Link>
+            <br />
+          </div>
+
+          <div className="wrapper">
+            <h2 className="section-headline">Recent Articles</h2>
+
             <ul className="article-list">
               {posts.map(({ node }) => {
                 return (
@@ -77,9 +93,9 @@ class RootIndex extends React.Component {
               })}
             </ul>
             <Link to="/blog/">
-            <button id={styles.secondarycta} className="btn btn-lg">
-            View More
-            </button>
+              <button id={styles.secondarycta} className="btn btn-lg">
+                View More
+              </button>
             </Link>
           </div>
         </div>

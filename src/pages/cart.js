@@ -31,7 +31,7 @@ class Cart extends React.Component {
           <h6 className={styles.cartitemdesc}>
             Neldo Package: Lorem ipsum ipsum ipsum
           </h6>
-          <img className={styles.cartitemimg} src={logo} />
+          <img alt="logo" className={styles.cartitemimg} src={logo} />
           <br /><br/>    <p className={styles.cartitemqty}>
             <span><strong>Quantity: </strong></span>
             <select className={styles.cartitemselect}>
