@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./cart.module.css";
 import Layout from "../components/layout";
 import logo from "../components/nyoandnuralogo.png";
-
+import { Link } from "gatsby"
 class Cart extends React.Component {
   render() {
     return (
@@ -50,14 +50,15 @@ class Cart extends React.Component {
           <button className={styles.removecta}>Remove Item</button>
           <br /> <br /> 
           <hr />
-    
           <p>
             Total:
             <span>
               <i>$2999.00</i>
             </span>
           </p>
+<Link to="/book/">
           <button className={styles.secondarycta}>Continue to Checkout</button>
+          </Link>
           <br />
         </div>
         <br /> <br />
