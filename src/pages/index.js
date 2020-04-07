@@ -32,7 +32,7 @@ class RootIndex extends React.Component {
             </button><br/><br/>
           <div className="wrapper">
             <h2 className="section-headline">Best Deals</h2>
-            <br/><br/><br/><br/><br/><br/>
+ 
             <p id={styles.psubheader} className="article-list">
               Free website maintenence for two months included with purchase of
               Neldo or Neldo Champ Packages
@@ -45,7 +45,7 @@ class RootIndex extends React.Component {
             <br/>
             <div className="wrapper">
             <h2 className="section-headline">Our Clients</h2>
-            <br/><br/><br/><br/><br/><br/>
+           
             <p id={styles.pclientcpy} className="article-list">A few of our customers...
             </p><br/>
 <img className={styles.clientlogo} alt="logo" src={logo} />
@@ -61,7 +61,7 @@ class RootIndex extends React.Component {
      
           <div className="wrapper">
             <h2 className="section-headline">Recent articles</h2>
-            <br/><br/><br/><br/><br/><br/>
+   
             <ul className="article-list">
               {posts.map(({ node }) => {
                 return (

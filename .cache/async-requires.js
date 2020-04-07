@@ -13,6 +13,7 @@ exports.components = {
   "component---src-pages-shop-neldo-js": () => import("./../src/pages/shop/neldo.js" /* webpackChunkName: "component---src-pages-shop-neldo-js" */),
   "component---src-pages-shop-neldochamp-js": () => import("./../src/pages/shop/neldochamp.js" /* webpackChunkName: "component---src-pages-shop-neldochamp-js" */),
   "component---src-pages-shop-neldolight-js": () => import("./../src/pages/shop/neldolight.js" /* webpackChunkName: "component---src-pages-shop-neldolight-js" */),
-  "component---src-pages-time-js": () => import("./../src/pages/time.js" /* webpackChunkName: "component---src-pages-time-js" */)
+  "component---src-pages-time-js": () => import("./../src/pages/time.js" /* webpackChunkName: "component---src-pages-time-js" */),
+  "component---src-pages-addon-js": () => import("./../src/pages/addon.js" /* webpackChunkName: "component---src-pages-addon-js" */)
 }
 

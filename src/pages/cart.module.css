@@ -65,6 +65,7 @@
 
 .cartitemqty{
     float:left;
+    margin-left: 25px;
 }
 
 .cartitemselect{

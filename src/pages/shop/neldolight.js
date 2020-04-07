@@ -45,7 +45,7 @@ class Neldolight extends React.Component {
           </div>
           <br /> <br />
           <br /> <br />
-          <h4>Details:</h4>
+          <h4 className={styles.detailssubheader}>Details:</h4><br/>
           <p>Complete Custom made Brand Style Guide which includes:</p>
           <ul>
             <li>Mission Statement</li>

@@ -32,12 +32,12 @@ class Cart extends React.Component {
             Neldo Package: Lorem ipsum ipsum ipsum
           </h6>
           <img className={styles.cartitemimg} src={logo} />
-          <p className={styles.cartitemqty}>
+          <br /><br/>    <p className={styles.cartitemqty}>
             <span><strong>Quantity: </strong></span>
             <select className={styles.cartitemselect}>
               <option> 1</option>
             </select>
-          </p>
+          </p>          <br /><br/>
           <p className={styles.pricelabel}>
             <span>
               <strong>Price: </strong>
