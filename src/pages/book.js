@@ -26,60 +26,60 @@ class Book extends React.Component {
           <br /><br/>
           <h2>Book Initial Consultation</h2>
           <br/><br/><br/><br/>  
-          <p>Choose a date and time to book your initial consultation appointment:</p>
+          <p className={styles.pitem}>Choose a date and time to book your initial consultation appointment:</p>
 <br/><br/>
 
-<h3>July</h3>
+<h3 className={styles.july}>July</h3>
 
-<ol className="calendar" start="6">
+<ol className={styles.calendar} start="6">
 
-	<li id="lastmonth">
-		<ol start="29">
-			<li>29</li>
-			<li>30</li>
+	<li className={styles.oitem} id={styles.lastmonth}>
+		<ol className={styles.olist} start="29">
+			<li className={styles.oitem}>29</li>
+			<li className={styles.oitem}>30</li>
 		</ol>
 	</li>
 	
-	<li id="thismonth">
-		<ol>
-			<li>1</li>
-			<li>2</li>
-			<li>3</li>
-			<li>4</li>
-			<li>5</li>
-			<li>6</li>
-			<li>7</li>
-			<li>8</li>
-			<li>9</li>
-			<li>10</li>
-			<li>11</li>
-			<li>12</li>
-			<li>13</li>
-			<li>14</li>
-			<li>15</li>
-			<li>16</li>
-			<li>17</li>
-			<li>18</li>
-			<li>19</li>
-			<li>20</li>
-			<li>21</li>
-			<li>22</li>
-			<li>23</li>
-			<li>24</li>
-			<li>25</li>
-			<li>26</li>
-			<li>27</li>
-			<li>28</li>
-			<li>29</li>
-			<li>30</li>
-			<li>31</li>
+	<li className={styles.oitem} id={styles.thismonth}>
+		<ol className={styles.olist}>
+			<li className={styles.oitem}>1</li>
+			<li className={styles.oitem}>2</li>
+			<li className={styles.oitem}>3</li>
+			<li className={styles.oitem}>4</li>
+			<li className={styles.oitem}>5</li>
+			<li className={styles.oitem}>6</li>
+			<li className={styles.oitem}>7</li>
+			<li className={styles.oitem}>8</li>
+			<li className={styles.oitem}>9</li>
+			<li className={styles.oitem}>10</li>
+			<li className={styles.oitem}>11</li>
+			<li className={styles.oitem}>12</li>
+			<li className={styles.oitem}>13</li>
+			<li className={styles.oitem}>14</li>
+			<li className={styles.oitem}>15</li>
+			<li className={styles.oitem}>16</li>
+			<li className={styles.oitem}>17</li>
+			<li className={styles.oitem}>18</li>
+			<li className={styles.oitem}>19</li>
+			<li className={styles.oitem}>20</li>
+			<li className={styles.oitem}>21</li>
+			<li className={styles.oitem}>22</li>
+			<li className={styles.oitem}>23</li>
+			<li className={styles.oitem}>24</li>
+			<li className={styles.oitem}>25</li>
+			<li className={styles.oitem}>26</li>
+			<li className={styles.oitem}>27</li>
+			<li className={styles.oitem}>28</li>
+			<li className={styles.oitem}>29</li>
+			<li className={styles.oitem}>30</li>
+			<li className={styles.oitem}>31</li>
 		</ol>
 	</li>
 	
-	<li id="nextmonth">
+	<li className={styles.oitem} id={styles.nextmonth}>
 		<ol>
-			<li>1</li>
-			<li>2</li>
+			<li className={styles.oitem}>1</li>
+			<li className={styles.oitem}>2</li>
 		</ol>
 	</li>
 	

@@ -26,14 +26,14 @@ class RootIndex extends React.Component {
            
           </div>
           <div className="wrapper">
-          <p id={styles.abvfldcpy} className="article-list">Must have top notch maintainable and custom made to fit your business needs.</p></div>
+          <p id={styles.abvfldcpy} className={"article-list"}>Must have top notch maintainable and custom made to fit your business needs.</p></div>
           <button id={styles.maincta} className="btn text-white btn-lg">
               Shop Now
             </button><br/><br/>
           <div className="wrapper">
             <h2 className="section-headline">Best Deals</h2>
-
-            <p className="article-list">
+            <br/><br/><br/><br/><br/><br/>
+            <p id={styles.psubheader} className="article-list">
               Free website maintenence for two months included with purchase of
               Neldo or Neldo Champ Packages
             </p><br/><br/>
@@ -45,8 +45,8 @@ class RootIndex extends React.Component {
             <br/>
             <div className="wrapper">
             <h2 className="section-headline">Our Clients</h2>
-
-            <p className="article-list">A few of our customers...
+            <br/><br/><br/><br/><br/><br/>
+            <p id={styles.pclientcpy} className="article-list">A few of our customers...
             </p><br/>
 <img className={styles.clientlogo} alt="logo" src={logo} />
 <img className={styles.clientlogo} alt="logo" src={logo} />
@@ -61,6 +61,7 @@ class RootIndex extends React.Component {
      
           <div className="wrapper">
             <h2 className="section-headline">Recent articles</h2>
+            <br/><br/><br/><br/><br/><br/>
             <ul className="article-list">
               {posts.map(({ node }) => {
                 return (

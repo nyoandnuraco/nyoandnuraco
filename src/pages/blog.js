@@ -21,6 +21,7 @@ class BlogIndex extends React.Component {
           </div>
           <div className="wrapper">
             <h2 className="section-headline">Recent articles</h2>
+            <br/><br/><br/><br/><br/><br/>
             <ul className="article-list">
               {posts.map(({ node }) => {
                 return (

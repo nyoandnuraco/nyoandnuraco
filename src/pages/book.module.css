@@ -101,14 +101,9 @@
     justify-content: space-between;
     align-items:center;
 }
-h2{
-    float:left;
-}
-h4{
-    float:right;
-}
 
- ol.calendar{
+
+ .calendar{
     margin:50px;
     font:1em/1.4 Verdana, Arial, Helvetica, sans-serif; 
     background: top center no-repeat #ffffff;
@@ -121,15 +116,15 @@ h4{
     background: top left no-repeat;
     padding: 12px 0 0 20px;
 }
- li{
+.oitem{
      list-style:none;
     }
- p.link{
+ .link{
      text-align:center;
      display: block;
     }
 
- h3{
+.july{
      
     display:block;
     width:300px;
@@ -145,7 +140,7 @@ padding-right:50px;
  /*
   * Day styles
   -------------------------*/
- li li{
+  .oitem{
      width:6em;
     height:6em;
     float:left;
@@ -155,15 +150,15 @@ padding-right:50px;
     background: #d8d8d8 bottom right no-repeat; 
 }
  
- li li p{
+.oitem .pitem{
      font-size:.7em;
      display:block;
     }
- li li ol{
+    .oitem .olist{
      width:auto;
     }
- li li ul li,
- li li ol li{
+    .oitem .oitem .olist .oitem,
+    .oitem .oitem .olist .oitem{
      font-size:.7em;
      display:block;
      height:auto;
@@ -173,8 +168,8 @@ padding-right:50px;
      padding:.2em 0;float:none;
     }
 
- li#lastmonth li,
- li#nextmonth li{ 
+ .oitem #lastmonth .oitem,
+ .oitem #nextmonth .oitem{ 
      background-color: red;
     }
 

@@ -8,7 +8,7 @@ class Time extends React.Component {
     return (
       <Layout location={this.props.location}>
         <br />
-        <h1 className={styles.header}>Checkout</h1>
+        <h1 className={styles.headera}>Checkout</h1>
         <br />
         <div className="container">
           <div className={styles.checkout}>
@@ -37,7 +37,12 @@ class Time extends React.Component {
           <div className={styles.box}>
             <span className={styles.time}>3:00 PM</span>
           </div>
+          <Link to="/addon/">
+          <button className={styles.secondarycta}>Pay with Card</button>
+          </Link>
+          <br/><br/>
         </div>
+        <br/><br/>
       </Layout>
     );
   }

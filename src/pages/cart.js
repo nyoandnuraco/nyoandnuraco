@@ -24,8 +24,8 @@ class Cart extends React.Component {
           </div>
           <br /><br/>
           <div className={styles.sidebyside}>
-          <h2>Your Cart</h2>
-          <h4>1 Item</h4>
+          <h2 className={styles.headercart}>Your Cart</h2>
+          <h4 className={styles.itemnumber}>1 Item</h4>
           </div>
           <hr />
           <h6 className={styles.cartitemdesc}>
