@@ -9,7 +9,8 @@ class Shop extends React.Component {
   
     return (
       <Layout location={this.props.location}>
-          <div className={styles.hero}>Shop</div>
+            <br/>
+          <div className={styles.hero}><h1 className={styles.landingheader}>Shop</h1></div>
         <div className="container pl-container">
       
        <div>

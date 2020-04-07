@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 //import Hero from '../components/hero'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
-import styles from './blog.module.css'
+import styles from './index.module.css'
 class RootIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
@@ -14,9 +14,10 @@ class RootIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
+            <br/>
         <div style={{ background: '#fff' }}>
           <Helmet title={siteTitle} />
-          <div className={styles.hero}>Home</div>
+          <div className={styles.hero}><h1 className={styles.landingheader}>NYO & <br/>NURA CO.</h1></div>
           <div className="wrapper">
             <h2 className="section-headline">Recent articles</h2>
             <ul className="article-list">

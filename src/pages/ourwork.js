@@ -8,7 +8,10 @@ class Ourwork extends React.Component {
   
     return (
       <Layout location={this.props.location}>
-         <div className={styles.hero}>Our Work</div>
+           <br/>
+        <div className={styles.hero}>
+          <h1 className={styles.landingheader}>Our Work</h1>
+        </div>
       </Layout>
     )
   }

@@ -7,6 +7,9 @@
   height: 20vh;
   max-height: 100px;
   font-size: 1.25em;
+  background-color:#0146c9;
+  color:#ffffff;
+
 }
 
 .navigationItem {
@@ -23,4 +26,13 @@ img{
   width:50px;
   height: auto;
   float:left;
+}
+
+.mainnav{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.navigationItem a:hover {
+  color:#ffffff;
+  text-decoration: underline;
 }

@@ -4,7 +4,7 @@ import styles from './navigation.module.css'
 import logo from './nyoandnuralogo.png';
 import icon from './shopping-cart-icon.jpg';
 export default () => (
-  <nav role="navigation">
+  <nav className={styles.mainnav} role="navigation">
     <ul className={styles.navigation}>
       <li className={styles.navigationItem}>
         <Link to="/"><img alt="logo" className="logo" height="100%" width="100%" src={logo}/></Link>
