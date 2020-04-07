@@ -8,7 +8,10 @@
     "url": "https://github.com/contentful/starter-gatsby-blog/issues"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "contentful": "^7.14.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.2",
     "gatsby": "^2.19.1",
     "gatsby-image": "^2.0.13",
     "gatsby-plugin-react-helmet": "^3.0.0",
@@ -20,6 +23,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.0",
+    "stripe": "^8.39.0",
     "yarn": "^1.22.4"
   },
   "homepage": "https://github.com/contentful/starter-gatsby-blog#readme",
@@ -29,12 +33,13 @@
     "starter"
   ],
   "license": "MIT",
-  "main": "n/a",
+  "main": "app.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/contentful/starter-gatsby-blog.git"
   },
   "scripts": {
+    "start": "node app.js",
     "dev": "gatsby develop",
     "build": "gatsby build",
     "heroku-postbuild": "gatsby build",
