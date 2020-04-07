@@ -18,17 +18,14 @@
   }
   
  .imgbox{
-    width:150px;
-    height: 100px; 
+    width:200px;
+    height: 150px; 
     background-color: #d8d8d8;
     display: inline-block;
     float:left;
     margin-right: 25px;
  }
 
- .description{
-     padding:20px;
- }
 
  #ctabtn{
      float:right;

@@ -22,15 +22,16 @@ class Neldo extends React.Component {
         </div>
     </nav>
 <div class="wrapper">
-     <h2>Neldo</h2>
+     <h1>Neldo</h1>
 
                <div className={styles.imgbox}></div>
-                <div class="description">Must have top notch maintainable custom made websites to fit your needs</div>
-             <span>$2,500</span> 
-                <br/>  <br/>
-
+                <div>Must have top notch maintainable custom made websites to fit your needs</div>
+           
+                <br/>  <br/>   <br/>  <br/>
+                <span>Price: <i>$2,500</i></span> 
    <div id={styles.ctabtn} className="btn text-white btn-lg">Add to Cart</div> 
-    <h3>Details</h3>
+   <br/>  <br/><br/>  <br/>
+    <h4>Details:</h4>
     <p>Complete Custom made Brand Style Guide which includes:</p>
     <ul>
         <li>Mission Statement</li>
