@@ -1,0 +1,45 @@
+.sm-img-box{
+    width:50px;
+    height:50px; 
+    background-color: #d8d8d8;
+    float:left;
+
+  }
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 61.8vh;
+    max-height: 400px;
+    background: #e1e1e1;
+    font-size: 2em;
+    overflow: hidden;
+    margin-bottom:50px;
+  }
+  
+ .img-box{
+    width:150px;
+    height: 100px; 
+    background-color: #d8d8d8;
+    display: inline-block;
+    float:left;
+    margin:25px;
+ }
+
+ .description{
+     padding:20px;
+ }
+
+ .cta-btn{
+     float:right;
+ }
+ button{
+     background: #0146c9;
+ }
+
+ .navbar-brand{
+     padding-left: 25px;
+     padding-right: 25px;
+ }
+ 
+ 

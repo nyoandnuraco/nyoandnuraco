@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import './shop.css'
+import styles from './shop.module.css'
 import Layout from '../components/layout'
 
 
@@ -9,7 +9,9 @@ class Shop extends React.Component {
   
     return (
       <Layout location={this.props.location}>
-        <div className="container">
+          <div className={styles.hero}>Shop</div>
+        <div className="container pl-container">
+      
        <div>
        <Link to="/shop/neldolight">
          <h3>Neldo Light</h3>
@@ -19,7 +21,7 @@ class Shop extends React.Component {
        </div>
        <hr/>
        <div className="">
-       <Link to="/shop/neldolight">
+       <Link to="/shop/neldo">
           <h3>Neldo</h3>
           <p>dsfasdfafdasfsadfasfdas</p>
           <span>$2500</span>
@@ -27,7 +29,7 @@ class Shop extends React.Component {
        </div>
        <hr/>
        <div className="">
-       <Link to="/shop/neldolight">
+       <Link to="/shop/neldochamp">
           <h3>Neldo Champ</h3>
           <p>dsfasdfafdasfsadfasfdas</p>
           <span>$2500</span>
