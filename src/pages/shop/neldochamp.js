@@ -19,12 +19,7 @@ class Neldochamp extends React.Component {
     });
     var element = document.getElementById("cartcount");
     element.classList.add("mystyle"); 
-    var b = window.confirm('Would you like to Checkout? Otherwise Press Cancel to Continue Browsing.');
-    if(b){
-      return window.location.href = "/cart/"
-    }else{
-      return window.location.href = "/shop/"
-    } }
+   }
   render() {
     const mystyle = {
       color: "white",

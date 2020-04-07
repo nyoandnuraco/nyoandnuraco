@@ -18,12 +18,7 @@ class Neldo extends React.Component {
     });
     var element = document.getElementById("cartcount");
     element.classList.add("mystyle");
-    var a = window.confirm('Would you like to Checkout? Otherwise Press Cancel to Continue Browsing.');
-    if(a){
-      return window.location.href = "/cart/"
-    }else{
-      return window.location.href = "/shop/"
-    }
+   
   }
   render() {
     const mystyle = {
