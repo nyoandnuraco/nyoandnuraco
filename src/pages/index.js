@@ -6,6 +6,7 @@ import Helmet from "react-helmet";
 import Layout from "../components/layout";
 import ArticlePreview from "../components/article-preview";
 import styles from "./index.module.css";
+import logo from '../components/nyoandnuralogo.png'
 class RootIndex extends React.Component {
   render() {
     const siteTitle = get(this, "props.data.site.siteMetadata.title");
@@ -20,25 +21,44 @@ class RootIndex extends React.Component {
           <div className={styles.hero}>
             <h1 className={styles.landingheader}>
               NYO & <br />
-              NURA CO.
+              NURA <br/> COMPANY
             </h1>
            
           </div>
+          <div className="wrapper">
+          <p id={styles.abvfldcpy} className="article-list">Must have top notch maintainable and custom made to fit your business needs.</p></div>
           <button id={styles.maincta} className="btn text-white btn-lg">
               Shop Now
-            </button>
+            </button><br/><br/>
           <div className="wrapper">
             <h2 className="section-headline">Best Deals</h2>
 
             <p className="article-list">
               Free website maintenence for two months included with purchase of
               Neldo or Neldo Champ Packages
-            </p>
-           
-          </div>
-          <button id={styles.secondarycta} className="btn btn-lg">
+            </p><br/><br/>
+            <button id={styles.secondarycta} className="btn btn-lg">
               Shop Now
             </button>
+          </div>
+        
+            <br/>
+            <div className="wrapper">
+            <h2 className="section-headline">Our Clients</h2>
+
+            <p className="article-list">A few of our customers...
+            </p><br/>
+<img className={styles.clientlogo} alt="logo" src={logo} />
+<img className={styles.clientlogo} alt="logo" src={logo} />
+<img className={styles.clientlogo} alt="logo" src={logo} />
+<img className={styles.clientlogo} alt="logo" src={logo} />
+<br/><br/><br/><br/><br/><br/>
+            <button id={styles.secondarycta} className="btn btn-lg">
+            View More
+            </button>
+            <br/>
+          </div>
+     
           <div className="wrapper">
             <h2 className="section-headline">Recent articles</h2>
             <ul className="article-list">
@@ -50,6 +70,9 @@ class RootIndex extends React.Component {
                 );
               })}
             </ul>
+            <button id={styles.secondarycta} className="btn btn-lg">
+            View More
+            </button>
           </div>
         </div>
       </Layout>
