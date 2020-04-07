@@ -22,7 +22,7 @@ export default () => (
         <Link to="/cart/">
 <div className={styles.cartItems}>
           <img alt="cart" className={styles.cartimg} height="100%" width="100%" src={icon}/>
-          <span className={styles.cartcount}>1</span></div>
+         </div> <span id="cartcount"></span>
         </Link>
       </li>
     </ul>

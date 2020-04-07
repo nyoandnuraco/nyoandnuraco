@@ -6,9 +6,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 class Template extends React.Component {
   render() {
     const { children } = this.props
-
+    
     return (
       <Container>
+       
         <Navigation />
     
         {children}
