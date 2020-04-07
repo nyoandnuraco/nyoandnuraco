@@ -5,7 +5,10 @@
     float:left;
 
   }
-  
+  .plcontainer{
+    margin:25px;
+  }
+ 
  .imgbox{
     width:200px;
     height: 150px; 
@@ -30,7 +33,7 @@
  
  }
  .item{
-    width:27vw;
+    width:24vw;
   
  }
  .subnav{
