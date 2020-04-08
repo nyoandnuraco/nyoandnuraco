@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import styles from './shop.module.css'
 import Layout from '../components/layout'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import web from './web.jpg'
 class Shop extends React.Component {
   render() {
     return (
@@ -14,22 +14,26 @@ class Shop extends React.Component {
         </div>
         <div className={styles.plcontainer}>
           <hr />
-          <Link to="/shop/neldolight">
-            <h3>Neldo Light</h3>
-            <p>dsfasdfafdasfsadfasfdas</p>
-            <span>$699</span>
+          <Link className={styles.plitem} to="/shop/neldolight">
+          <img className={styles.productimg} width="100%" height="100%" src={web}/>
+            <h3 className={styles.subheading}>Neldo Light</h3>
+            <p className={styles.productitemdesc}>dsfasdfafdasfsadfasfdas</p>
+            <span className={styles.productitemprice}>$699</span>
+           
           </Link>
           <hr />
-          <Link to="/shop/neldo">
-            <h3>Neldo</h3>
-            <p>dsfasdfafdasfsadfasfdas</p>
-            <span>$2999</span>
+          <Link className={styles.plitem} to="/shop/neldo">
+          <img className={styles.productimg} width="100%" height="100%" src={web}/>
+            <h3 className={styles.subheading}>Neldo</h3>
+            <p className={styles.productitemdesc}>dsfasdfafdasfsadfasfdas</p>
+            <span className={styles.productitemprice}>$2999</span>
           </Link>
           <hr />
-          <Link to="/shop/neldochamp">
-            <h3>Neldo Champ</h3>
-            <p>dsfasdfafdasfsadfasfdas</p>
-            <span>$4999</span>
+          <Link className={styles.plitem} to="/shop/neldochamp">
+          <img className={styles.productimg} width="100%" height="100%" src={web}/>
+            <h3 className={styles.subheading}>Neldo Champ</h3>
+            <p className={styles.productitemdesc}>dsfasdfafdasfsadfasfdas</p>
+            <span className={styles.productitemprice}>$4999</span>
           </Link>
           <hr />
         </div>

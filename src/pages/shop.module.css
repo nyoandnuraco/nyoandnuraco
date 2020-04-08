@@ -105,3 +105,44 @@
   display:none;
 
 }
+.productimg{
+  float:right;
+  width: 150px;
+}
+.subheading{
+  color:rgba(0,0,0,.68);
+}
+.productitemdesc{
+  color:rgba(0,0,0,.68); 
+}
+.productitemprice{
+  color:rgba(0,0,0,.68); 
+  float:right;
+  margin-right:25px;
+  padding-right:25px;
+}
+.plitem:hover{
+  text-decoration:none;
+
+}
+@media only screen and (min-width: 768px) {
+  .plcontainer {
+   display:flex;
+   flex-direction: row;
+   justify-content:center;
+   align-items:center;
+   padding: 25px;
+   margin:25px;
+
+  }
+  .productimg{
+    width:100%;
+    padding: 25px;
+   margin:25px;
+   margin-bottom:0px;
+   display:flex;
+   flex-direction: row;
+   justify-content:center;
+   align-items:center;
+  }
+}
