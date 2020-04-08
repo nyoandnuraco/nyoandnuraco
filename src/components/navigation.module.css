@@ -1,6 +1,7 @@
 .navigation {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
+
   list-style: none;
   padding: 0;
   margin: 0;
@@ -28,7 +29,7 @@ img{
   float:left;
 }
 .cartimg{
-  width: 125px;
+  width: 100px;
     height: auto;
     float: right;
     z-index: 0;
