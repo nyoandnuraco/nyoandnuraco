@@ -117,9 +117,7 @@
 }
 .productitemprice{
   color:rgba(0,0,0,.68); 
-  float:right;
-  margin-right:25px;
-  padding-right:25px;
+ 
 }
 .plitem:hover{
   text-decoration:none;
@@ -144,5 +142,9 @@
    flex-direction: row;
    justify-content:center;
    align-items:center;
+  }
+  .productitemprice{
+    float:right;
+    
   }
 }
