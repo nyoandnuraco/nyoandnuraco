@@ -17,6 +17,21 @@
     flex-direction:column;
    
   }
+  .exit{
+    float:right;
+    font-size:24px;
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+   margin-right:25px;
+    border:2px solid rgba(0,0,0,.68);
+    border-radius:5px;
+    color:rgba(0,0,0,.68);
+    margin-bottom:25px;
+  }
+  .exit:hover{
+    cursor:pointer;
+  }
   .smimgbox{
     width:25px;
     height: 25px; 
@@ -39,7 +54,13 @@
     background-size: cover;
     background-repeat: no-repeat;
    }
-
+   .popopen{
+    background-image:url('./geometric-decoration.jpg'),
+   }
+.popupimg{
+  width:100%;
+  height: auto;
+}
    .imgbox:hover{
      cursor:pointer;
    }
