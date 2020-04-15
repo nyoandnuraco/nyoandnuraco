@@ -1,22 +1,26 @@
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
 .navigation {
   display: flex;
   justify-content: space-evenly;
-  width:100vw;
+  width:100%;
   list-style: none;
   padding: 0;
   margin: 0;
   height: 20vh;
   max-height: 100px;
-  font-size: 1.25em;
+  font-size: 1rem;
   background-color:#0146c9;
   color:#ffffff;
-
+  padding-left:20px;
+  padding-right:20px;
 }
 
 .navigationItem {
   display: inline-flex;
   align-items: center;
-  margin: 0 1em;
 }
 
 .navigationItem a {
@@ -24,16 +28,12 @@
 }
 
 img{
-  width:50px;
+  width:44px;
   height: auto;
   float:left;
 }
 .cartimg{
-  width: 100px;
-    height: auto;
-    float: right;
-    z-index: 0;
-    position: absolute;
+ 
 }
 .mainnav{
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -66,4 +66,9 @@ img{
   flex-direction:row;
   align-items:center;
   justify-content: center;
+}
+
+.logo{
+  width:50%;
+  height:50%;
 }
