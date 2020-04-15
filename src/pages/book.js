@@ -8,7 +8,7 @@ class Book extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-       <br />   <br />   <br />   <br />   <br />
+       <br />   <br />   
         <h1 className={styles.headera}>Checkout</h1>
         <br />
         <div className="container">
@@ -28,7 +28,68 @@ class Book extends React.Component {
           <br/><br/> 
           <p className={styles.pitem}>Choose a date and time to book your initial consultation appointment:</p>
 <br/><br/>
-<input type="date" />
+<div className={styles.wrapper}>
+<input placeholder="April 2020" className={styles.monthSelector} type="select" />
+
+</div>
+<div className={styles.col}>
+  <div className={styles.day}>
+    <div className="column">
+    <h6 className={styles.dayOfWeek}>Wednesday</h6>
+    <h2 className={styles.date}>15</h2>
+    </div>
+    <hr></hr>
+    <div className="column">
+    <p className={styles.description}>Initial Appt</p>
+    <p className={styles.duration}>60 mins</p>
+    </div>
+  </div>
+  <div className={styles.day}>
+    <div className="column">
+    <h6 className={styles.dayOfWeek}>Thursday</h6>
+    <h2 className={styles.date}>16</h2>
+    </div>
+    <hr></hr>
+    <div className="column">
+    <p className={styles.description}>Initial Appt</p>
+    <p className={styles.duration}>60 mins</p>
+    </div>
+  </div>
+  <div className={styles.day}>
+    <div className="column">
+    <h6 className={styles.dayOfWeek}>Friday</h6>
+    <h2 className={styles.date}>17</h2>
+    </div>
+    <hr></hr>
+    <div className="column">
+    <p className={styles.description}>Initial Appt</p>
+    <p className={styles.duration}>60 mins</p>
+    </div>
+  </div>
+  <div className={styles.day}>
+    <div className="column">
+    <h6 className={styles.dayOfWeek}>Monday</h6>
+    <h2 className={styles.date}>20</h2>
+    </div>
+    <hr></hr>
+    <div className="column">
+    <p className={styles.description}>Initial Appt</p>
+    <p className={styles.duration}>60 mins</p>
+    </div>
+  </div>
+  <div className={styles.day}>
+    <div className="column">
+    <h6 className={styles.dayOfWeek}>Tuesday</h6>
+    <h2 className={styles.date}>21</h2>
+    </div>
+    <hr></hr>
+    <div className="column">
+    <p className={styles.description}>Initial Appt</p>
+    <p className={styles.duration}>60 mins</p>
+    </div>
+  </div>
+
+</div>
 <Link to="/time/">
           <button className={styles.secondarycta}>Continue to Checkout</button>
           </Link>
