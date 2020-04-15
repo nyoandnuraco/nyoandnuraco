@@ -4,7 +4,7 @@ import styles from '../pages/shop.module.css'
 
 export default () => (
     <nav className={styles.subnav}>
-    <div className="container">
+    <div className={styles.container}>
       <Link id={typeof window !== 'undefined' ? window.location.href.split('/')[4] === "neldolight" ? styles.active : styles.inactive : ''}
         className={styles.item + " navbar-brand"}
         to="/shop/neldolight"
