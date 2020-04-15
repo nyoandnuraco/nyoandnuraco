@@ -5,21 +5,21 @@ import styles from '../pages/shop.module.css'
 export default () => (
     <nav className={styles.subnav}>
     <div className="container">
-      <Link id={window.location.href.split('/')[4] === "neldolight" ? styles.active : styles.inactive}
+      <Link id={typeof window !== 'undefined' ? window.location.href.split('/')[4] === "neldolight" ? styles.active : styles.inactive : ''}
         className={styles.item + " navbar-brand"}
         to="/shop/neldolight"
       >
         Neldo Light
         <span className={styles.border}></span>
       </Link>
-      <Link id={window.location.href.split('/')[4] === "neldo" ? styles.active : styles.inactive}
+      <Link id={typeof window !== 'undefined' ? window.location.href.split('/')[4] === "neldo" ? styles.active : styles.inactive : ''}
         className={styles.item + " navbar-brand"}
         to="/shop/neldo"
       >
         Neldo
         <span className={styles.border}></span>
       </Link>
-      <Link id={window.location.href.split('/')[4] === "neldochamp" ? styles.active : styles.inactive}
+      <Link id={typeof window !== 'undefined' ? window.location.href.split('/')[4] === "neldochamp" ? styles.active : styles.inactive : ''}
         className={styles.item + " navbar-brand"}
         to="/shop/neldochamp"
       >
