@@ -4,6 +4,8 @@ import Layout from "../../components/layout";
 import styles from "../shop.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Tab from '../../components/tab';
+import ProductDetail from '../../components/product-detail';
+import Popup from '../../components/popup';
 
 class Neldo extends React.Component {
   constructor(props) {
@@ -45,50 +47,37 @@ class Neldo extends React.Component {
           {this.state.count}
         </span>
        <Tab/>
-        <div class="wrapper">
-          <h1>Neldo</h1>
+       <div class="wrapper">
+       <h1>Neldo</h1>
           <br />
-          <div className={styles.row}>
-            <div className={styles.column}>
-              <div className={styles.smimgbox}></div>
-              <div className={styles.smimgbox}></div>
-              <div className={styles.smimgbox}></div>
-              <div className={styles.smimgbox}></div>
-              <div className={styles.smimgbox}></div>
-            </div>
-            <div className={styles.imgbox}></div>
-            <div>
-              Must have top notch maintainable custom made websites to fit your
-              needs
-            </div>
-          </div>
-          <span>
-            Price: <i>$2,999</i>
-          </span>
-          <Link to="#">
-            <button
-              onClick={(e) => this.handleClick(e)}
-              id={styles.ctabtn}
-              className="btn text-white btn-lg"
-            >
-              Add to Cart
-            </button>
-          </Link>
-          <br /> <br />
-          <br /> <br />
-          <h4 id={styles.detailssubheader}>Details:</h4>
-          <br />
-          <p>Complete Custom made Brand Style Guide which includes:</p>
-          <ul>
-            <li>Mission Statement</li>
-            <li>Typography</li>
-            <li>Logo Design</li>
-            <li>Color Palette</li>
-            <li>Iconography</li>
-            <li>Hierarchy</li>
-            <li>Photography Guidelines</li>
-          </ul>
-        </div>
+       <Popup/>
+     
+        <Link to="#">
+      
+      <button
+        onClick={(e) => this.handleClick(e)}
+        id={styles.ctabtn}
+        className="btn text-white btn-lg"
+      >
+        Add to Cart
+      </button>
+    </Link>
+ 
+       <ProductDetail productprice=" $2,999" productsummary="
+         Stand out from competition let us design everything and map out user interactions to optimize user experience. For see potential problems, get customers through the checkout process and keep them happy. Custom built Brand Style Guide for your company, Mockup, and complete website development" productdetails="Complete Custom made Brand Style Guide, Mockup and Website Development which includes:">
+         
+    </ProductDetail>
+    <ul>
+      <li>Mission Statement</li>
+      <li>Typography</li>
+      <li>Logo Design</li>
+      <li>Color Palette</li>
+      <li>Iconography</li>
+      <li>Hierarchy</li>
+      <li>Photography Guidelines</li>
+      <li>Full Website Development</li>
+    </ul>  
+    </div>
       </Layout>
     );
   }
