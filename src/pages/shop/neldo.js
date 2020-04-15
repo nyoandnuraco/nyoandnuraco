@@ -68,12 +68,20 @@ class Neldo extends React.Component {
         <div class="wrapper">
           <h1>Neldo</h1>
           <br />
-          <div className={styles.imgbox}></div>
-          <div>
-            Must have top notch maintainable custom made websites to fit your
-            needs
+          <div className={styles.row}>
+            <div className={styles.column}>
+              <div className={styles.smimgbox}></div>
+              <div className={styles.smimgbox}></div>
+              <div className={styles.smimgbox}></div>
+              <div className={styles.smimgbox}></div>
+              <div className={styles.smimgbox}></div>
+            </div>
+            <div className={styles.imgbox}></div>
+            <div>
+              Must have top notch maintainable custom made websites to fit your
+              needs
+            </div>
           </div>
-          <br /> <br /> <br /> <br />
           <span>
             Price: <i>$2,999</i>
           </span>

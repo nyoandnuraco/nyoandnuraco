@@ -65,12 +65,21 @@ class Neldolight extends React.Component {
         <div class="wrapper">
           <h1>Neldo Light</h1>
           <br />
+          <div className={styles.row}>
+            <div className={styles.column}>
+              <div className={styles.smimgbox}></div>
+              <div className={styles.smimgbox}></div>
+              <div className={styles.smimgbox}></div>
+              <div className={styles.smimgbox}></div>
+              <div className={styles.smimgbox}></div>
+            </div>
           <div className={styles.imgbox}></div>
           <div>
             Must have top notch maintainable custom made websites to fit your
             needs
           </div>
-          <br /> <br /> <br /> <br />
+          </div>
+       
           <span>
             Price: <i>$699</i>
           </span>

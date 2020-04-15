@@ -8,14 +8,33 @@
   .plcontainer{
     margin:25px;
   }
- 
+  .row{
+    display:flex;
+    flex-direction:row;
+  }
+  .column{
+    display:flex;
+    flex-direction:column;
+   
+  }
+  .smimgbox{
+    width:25px;
+    height: 25px; 
+    background-color: #d8d8d8;
+    display: inline-block;
+    float:left;
+    margin: 5px;
+ }
+
  .imgbox{
-    width:200px;
-    height: 150px; 
+    width:350px;
+    height: 175px; 
     background-color: #d8d8d8;
     display: inline-block;
     float:left;
     margin-right: 25px;
+    margin-left:10px;
+    margin-bottom:25px;
  }
 
 
