@@ -4,7 +4,7 @@ html, body {
 }
 .navigation {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width:100%;
   list-style: none;
   padding: 0;
@@ -32,8 +32,9 @@ img{
   height: auto;
   float:left;
 }
-.cartimg{
- 
+img.cartimg{
+ width: 65px;
+ height: auto;
 }
 .mainnav{
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
