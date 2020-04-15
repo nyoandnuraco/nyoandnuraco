@@ -31,12 +31,12 @@
     cursor:pointer;
   }
   .smimgbox{
-    width:25px;
-    height: 25px; 
+    height: 44px;
+    width: 44px;
+    margin: 10px;
     background-color: #d8d8d8;
     display: inline-block;
     float:left;
-    margin: 5px;
  }
 
  .imgbox{
@@ -113,7 +113,7 @@
 }
 
  .item{
-    width:24vw;
+    width:20vw;
   
  }
  .subnav{
