@@ -3,9 +3,9 @@ import { Link } from "gatsby";
 import Layout from "../../components/layout";
 import styles from "../shop.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import Tab from "../../components/tab";
 import Popup from "../../components/popup";
+
 class Neldolight extends React.Component {
   constructor(props) {
     super(props);
@@ -47,10 +47,13 @@ class Neldolight extends React.Component {
           {this.state.countl}
         </span>
         <Tab />
-        <div class="wrapper">
-          <h1>Neldo Light</h1>
+        <div className="wrapper">
+        <h1>Neldo Light</h1>
           <br />
-       <Popup/>
+          <div className={styles.mobile}>
+     
+       <Popup />
+       </div>
           <div className={styles.row}>
             <div className={styles.column}>
               <div className={styles.smimgbox}></div>
@@ -60,9 +63,7 @@ class Neldolight extends React.Component {
               <div className={styles.smimgbox}></div>
             </div>
             <Popup />
-            <div>
-            Stand out from competition let us design everything and map out user interactions to optimize user experience. For see potential problems, get customers through the checkout process and keep them happy. Custom built Brand Style Guide for your company, and Mockup.
-            </div>
+         
           </div>
           <span>
             Price: <i>$699</i>

@@ -40,16 +40,14 @@
  }
 
  .imgbox{
-    width:350px;
-    height: 175px; 
+    width:266.75px;
+    height: 177.85px; 
+    min-width: 250px;
     display: inline-block;
     float:left;
-    margin-right: 25px;
-    margin-left:10px;
-    margin-bottom:25px;
+  margin:25px;
     background-image:url('./geometric-decoration.jpg');
-    background-size: 350px 175px;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
    }
    .popopen{
@@ -198,6 +196,7 @@
     align-items: center;
     margin-bottom: 25px;
 }
+/*533.5 × 3557*/
 .breadcrumb{
   border: 2px solid #d8d8d8;
   padding-left: 8px;
@@ -220,6 +219,10 @@
    margin:25px;
 
   }
+  .imgbox{
+    width:533.5px;
+    height: 355.7px; 
+  }
   .column{
     display:flex;
     flex-direction:column;
@@ -228,8 +231,19 @@
   .row{
     display:flex;
     flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
   }
-
+  .col{
+    display:flex;
+    flex-direction:row;
+  }
+  .breadcrumb{
+    display:none;
+  }
+.mobile{
+  display:none;
+}
   .productimg{
     width:100%;
     padding: 25px;
@@ -244,5 +258,9 @@
     float:right;
     margin-right:25px;
     padding-right:25px;
+  }
+  .productsum{
+   display:inline-block;
+   max-width: 33vw;
   }
 }

@@ -48,35 +48,50 @@ class Neldo extends React.Component {
         </span>
        <Tab/>
        <div class="wrapper">
-       <h1>Neldo</h1>
+          <h1>Neldo</h1>
           <br />
-       <Popup/>
+          <div className={styles.mobile}>
+            <Popup/>
+          </div>
+          <div className={styles.row}>
+            <div className={styles.column}>
+              <div className={styles.smimgbox}></div>
+              <div className={styles.smimgbox}></div>
+              <div className={styles.smimgbox}></div>
+              <div className={styles.smimgbox}></div>
+              <div className={styles.smimgbox}></div>
+            </div>
+            <Popup />
+          </div>
+          <span>
+            Price: <i>$2,999</i>
+          </span>
+          <Link to="/cart/">
+            <button
+              onClick={(e) => this.handleClick(e)}
+              id={styles.ctabtn}
+              className="btn text-white btn-lg"
+            >
+              Add to Cart
+            </button>
+          </Link>
+          <br /> <br />
+          <br /> <br />
+          <h4 className={styles.detailssubheader}>Details:</h4>
+          <br />
+          <p>Complete Custom made Brand Style Guide, Mockup and Website Development which includes:</p>
+          <ul>
+            <li>Mission Statement</li>
+            <li>Typography</li>
+            <li>Logo Design</li>
+            <li>Color Palette</li>
+            <li>Iconography</li>
+            <li>Hierarchy</li>
+            <li>Photography Guidelines</li>
+            <li>Full Website Development</li>
+          </ul>
      
-        <Link to="#">
-      
-      <button
-        onClick={(e) => this.handleClick(e)}
-        id={styles.ctabtn}
-        className="btn text-white btn-lg"
-      >
-        Add to Cart
-      </button>
-    </Link>
- 
-       <ProductDetail productprice=" $2,999" productsummary="
-         Stand out from competition let us design everything and map out user interactions to optimize user experience. For see potential problems, get customers through the checkout process and keep them happy. Custom built Brand Style Guide for your company, Mockup, and complete website development" productdetails="Complete Custom made Brand Style Guide, Mockup and Website Development which includes:">
-         
-    </ProductDetail>
-    <ul>
-      <li>Mission Statement</li>
-      <li>Typography</li>
-      <li>Logo Design</li>
-      <li>Color Palette</li>
-      <li>Iconography</li>
-      <li>Hierarchy</li>
-      <li>Photography Guidelines</li>
-      <li>Full Website Development</li>
-    </ul>  
+     
     </div>
       </Layout>
     );
