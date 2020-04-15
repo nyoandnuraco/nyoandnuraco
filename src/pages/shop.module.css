@@ -29,14 +29,24 @@
  .imgbox{
     width:350px;
     height: 175px; 
-    background-color: #d8d8d8;
     display: inline-block;
     float:left;
     margin-right: 25px;
     margin-left:10px;
     margin-bottom:25px;
- }
+    background-image:url('./geometric-decoration.jpg');
+    background-size: 350px 175px;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
 
+   .imgbox:hover{
+     cursor:pointer;
+   }
+
+   .smimgbox:hover{
+    cursor:pointer;
+  }
 
  #ctabtn{
      float:right;

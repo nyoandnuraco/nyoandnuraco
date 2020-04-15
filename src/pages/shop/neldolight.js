@@ -73,11 +73,11 @@ class Neldolight extends React.Component {
               <div className={styles.smimgbox}></div>
               <div className={styles.smimgbox}></div>
             </div>
-          <div className={styles.imgbox}></div>
-          <div>
-            Must have top notch maintainable custom made websites to fit your
-            needs
-          </div>
+            <div className={styles.imgbox}></div>
+            <div>
+              Must have top notch maintainable custom made websites to fit your
+              needs
+            </div>
           </div>
        
           <span>
