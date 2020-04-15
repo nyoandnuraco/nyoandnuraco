@@ -218,7 +218,7 @@ padding-right:50px;
     cursor: pointer;
 }
 
-hr{
+.divider{
     border:1px solid #d8d8d8;
     height:50px;  
 }

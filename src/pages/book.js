@@ -38,7 +38,7 @@ class Book extends React.Component {
     <h6 className={styles.dayOfWeek}>Wednesday</h6>
     <h2 className={styles.date}>15</h2>
     </div>
-    <hr></hr>
+    <hr className={styles.divider}></hr>
     <div className="column">
     <p className={styles.description}>Initial Appt</p>
     <p className={styles.duration}>60 mins</p>
@@ -49,7 +49,7 @@ class Book extends React.Component {
     <h6 className={styles.dayOfWeek}>Thursday</h6>
     <h2 className={styles.date}>16</h2>
     </div>
-    <hr></hr>
+    <hr className={styles.divider}></hr>
     <div className="column">
     <p className={styles.description}>Initial Appt</p>
     <p className={styles.duration}>60 mins</p>
@@ -60,7 +60,7 @@ class Book extends React.Component {
     <h6 className={styles.dayOfWeek}>Friday</h6>
     <h2 className={styles.date}>17</h2>
     </div>
-    <hr></hr>
+    <hr className={styles.divider}></hr>
     <div className="column">
     <p className={styles.description}>Initial Appt</p>
     <p className={styles.duration}>60 mins</p>
@@ -71,7 +71,7 @@ class Book extends React.Component {
     <h6 className={styles.dayOfWeek}>Monday</h6>
     <h2 className={styles.date}>20</h2>
     </div>
-    <hr></hr>
+    <hr className={styles.divider}></hr>
     <div className="column">
     <p className={styles.description}>Initial Appt</p>
     <p className={styles.duration}>60 mins</p>
@@ -82,7 +82,7 @@ class Book extends React.Component {
     <h6 className={styles.dayOfWeek}>Tuesday</h6>
     <h2 className={styles.date}>21</h2>
     </div>
-    <hr></hr>
+    <hr className={styles.divider}></hr>
     <div className="column">
     <p className={styles.description}>Initial Appt</p>
     <p className={styles.duration}>60 mins</p>
