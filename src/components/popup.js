@@ -7,10 +7,12 @@ class Popup extends React.Component {
     super(props);
     this.state = {
       expandImage: false,
-      prodSum: ''
+      prodSum: '',
+      breadcrumb: "5"
     };
     this.expandImage = this.expandImage.bind(this);
     this.collapsePopup = this.collapsePopup.bind(this);
+    this.selectImage = this.selectImage.bind(this)
   }
   expandImage(e) {
     e.preventDefault();
@@ -22,6 +24,12 @@ class Popup extends React.Component {
     e.preventDefault();
     this.setState({
       expandImage: false,
+    });
+  }
+  selectImage(e){
+    e.preventDefault();
+    this.setState({
+      breadcrumb: e.target.value
     });
   }
   render() {
@@ -38,7 +46,12 @@ class Popup extends React.Component {
     const nostyle = {
         display: "none",
       };
-      
+      const activecrumb = {
+        backgroundColor: "blue",
+      }
+      const inactivecrumb = {
+        backgroundColor: "#bbb",
+      }
     return (
       <div className={styles.col}>
         <button
@@ -60,11 +73,11 @@ class Popup extends React.Component {
           />
         </div>
         <div className={styles.rowspan}>
-              <span className={styles.breadcrumb}></span>
-              <span className={styles.breadcrumb}></span>
-              <span className={styles.breadcrumb}></span>
-              <span className={styles.breadcrumb}></span>
-              <span className={styles.breadcrumb}></span>
+              <button value="5" onClick={(e) => this.selectImage(e)} className={styles.breadcrumb} style={this.state.breadcrumb == "5" ? activecrumb : inactivecrumb}></button>
+              <button value="6" onClick={(e) => this.selectImage(e)} className={styles.breadcrumb} style={this.state.breadcrumb === "6" ? activecrumb : inactivecrumb}></button>
+              <button value="7" onClick={(e) => this.selectImage(e)} className={styles.breadcrumb} style={this.state.breadcrumb === "7" ? activecrumb : inactivecrumb}></button>
+              <button value="8" onClick={(e) => this.selectImage(e)} className={styles.breadcrumb} style={this.state.breadcrumb === "8" ? activecrumb : inactivecrumb}></button>
+              <button value="9" onClick={(e) => this.selectImage(e)} className={styles.breadcrumb} style={this.state.breadcrumb === "9" ? activecrumb : inactivecrumb}></button>
             </div>
             <p className={styles.productsum}>
             {typeof window !== 'undefined' ? 

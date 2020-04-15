@@ -11,7 +11,6 @@ class Neldolight extends React.Component {
     super(props);
     this.state = {
       countl: 0,
-      expandImage: false,
     };
     this.handleClick = this.handleClick.bind(this);
   }
