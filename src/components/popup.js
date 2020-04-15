@@ -1,11 +1,13 @@
 import React from "react";
 import styles from "../pages/shop.module.css";
 import designImage from '../pages/geometric-decoration.jpg';
+
 class Popup extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       expandImage: false,
+      prodSum: ''
     };
     this.expandImage = this.expandImage.bind(this);
     this.collapsePopup = this.collapsePopup.bind(this);
@@ -65,8 +67,9 @@ class Popup extends React.Component {
               <span className={styles.breadcrumb}></span>
             </div>
             <p className={styles.productsum}>
-              {window.location.href.split('/')[4] === 'neldolight' ? 
-            'Stand out from competition let us design everything and map out user interactions to optimize user experience. For see potential problems, get customers through the checkout process and keep them happy. Custom built Brand Style Guide for your company, and Mockup.' : window.location.href.split('/')[4] === 'neldo' ? "Stand out from competition let us design everything and map out user interactions to optimize user experience. For see potential problems, get customers through the checkout process and keep them happy. Custom built Brand Style Guide for your company, Mockup, and complete website development" : "Must have top notch maintainable custom made websites to fit your needs. Stand out from competition let us design everything and map out user interactions to optimize user experience. For see potential problems, get customers through the checkout process and keep them happy. Custom built Brand Style Guide for your company, Mockup, complete website development, and CMS added for future maintainability."}
+            {typeof window !== 'undefined' ? 
+             window.location.href.split('/')[4] === 'neldolight' ? 
+            'Stand out from competition let us design everything and map out user interactions to optimize user experience. For see potential problems, get customers through the checkout process and keep them happy. Custom built Brand Style Guide for your company, and Mockup.' : window.location.href.split('/')[4] === 'neldo' ? "Stand out from competition let us design everything and map out user interactions to optimize user experience. For see potential problems, get customers through the checkout process and keep them happy. Custom built Brand Style Guide for your company, Mockup, and complete website development" : "Must have top notch maintainable custom made websites to fit your needs. Stand out from competition let us design everything and map out user interactions to optimize user experience. For see potential problems, get customers through the checkout process and keep them happy. Custom built Brand Style Guide for your company, Mockup, complete website development, and CMS added for future maintainability.": ''}
             </p>
       </div>
     );
