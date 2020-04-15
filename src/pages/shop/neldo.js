@@ -3,6 +3,8 @@ import { Link } from "gatsby";
 import Layout from "../../components/layout";
 import styles from "../shop.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Tab from '../../components/tab';
+
 class Neldo extends React.Component {
   constructor(props) {
     super(props);
@@ -42,29 +44,7 @@ class Neldo extends React.Component {
         <span style={this.state.count !== 0 ? mystyle : nostyle}>
           {this.state.count}
         </span>
-        <nav className={styles.subnav}>
-          <div className="container">
-            <Link
-              className={styles.item + " navbar-brand"}
-              to="/shop/neldolight"
-            >
-              Neldo Light
-            </Link>
-            <Link
-              id={styles.active}
-              className={styles.item + " navbar-brand"}
-              to="/shop/neldo"
-            >
-              Neldo
-            </Link>
-            <Link
-              className={styles.item + " navbar-brand"}
-              to="/shop/neldochamp"
-            >
-              Neldo Champ
-            </Link>
-          </div>
-        </nav>
+       <Tab/>
         <div class="wrapper">
           <h1>Neldo</h1>
           <br />

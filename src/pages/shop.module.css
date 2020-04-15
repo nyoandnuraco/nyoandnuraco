@@ -109,6 +109,10 @@
  
  
  }
+ #inactive{
+  background-color:#ffffff;
+  color:#0146c9;
+}
  .item{
     width:24vw;
   

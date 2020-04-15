@@ -3,6 +3,7 @@ import './base.css'
 import Container from './container'
 import Navigation from './navigation'
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 class Template extends React.Component {
   render() {
     const { children } = this.props
@@ -11,7 +12,7 @@ class Template extends React.Component {
       <Container>
        
         <Navigation />
-    
+
         {children}
       </Container>
     )

@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import Layout from "../../components/layout";
 import styles from "../shop.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Tab from '../../components/tab';
 
 class Neldochamp extends React.Component {
   constructor(props) {
@@ -42,27 +43,7 @@ class Neldochamp extends React.Component {
         <span style={this.state.countc !== 0 ? mystyle : nostyle}>
           {this.state.countc}
         </span>
-        <nav className={styles.subnav}>
-          <div className="container">
-            <Link
-              className={styles.item + " navbar-brand"}
-              to="/shop/neldolight"
-            >
-              Neldo Light
-            </Link>
-            <Link className={styles.item + " navbar-brand"} to="/shop/neldo">
-              Neldo
-            </Link>
-            <Link
-              id={styles.active}
-              className={styles.item + " navbar-brand"}
-              to="/shop/neldochamp"
-            >
-              Neldo Champ
-            </Link>
-          </div>
-        </nav>
-
+       <Tab/>
         <div class="wrapper">
           <h1>Neldo Champ</h1>
           <br />

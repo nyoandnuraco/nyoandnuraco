@@ -4,6 +4,7 @@ import Layout from "../../components/layout";
 import styles from "../shop.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import designImage from '../../pages/geometric-decoration.jpg';
+import Tab from '../../components/tab'
 class Neldolight extends React.Component {
   constructor(props) {
     super(props);
@@ -64,31 +65,16 @@ class Neldolight extends React.Component {
     const nostyle = {
       display: "none",
     };
+    
+
     return (
       <Layout location={this.props.location}>
           <span style={this.state.countl !== 0 ? mystyle : nostyle}>
           {this.state.countl}
         </span>
-        <nav className={styles.subnav}>
-          <div className="container">
-            <Link
-              id={styles.active}
-              className={styles.item + " navbar-brand"}
-              to="/shop/neldolight"
-            >
-              Neldo Light
-            </Link>
-            <Link className={styles.item + " navbar-brand"} to="/shop/neldo">
-              Neldo
-            </Link>
-            <Link
-              className={styles.item + " navbar-brand"}
-              to="/shop/neldochamp"
-            >
-              Neldo Champ
-            </Link>
-          </div>
-        </nav>
+        <Tab />
+        
+       
         <div class="wrapper">
           <h1>Neldo Light</h1>
           <br />
