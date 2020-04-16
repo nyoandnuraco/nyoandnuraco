@@ -167,7 +167,8 @@
 }
 .productimg {
   float: right;
-  width: 150px;
+  width: 24vw;
+  padding:0px;
 }
 
 .subheading {

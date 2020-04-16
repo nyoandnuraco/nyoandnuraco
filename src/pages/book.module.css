@@ -44,10 +44,10 @@
 }
 
 .monthSelector {
-  width: 225px;
+  width: 150px;
   height: 44px;
   border: 2px solid transparent;
-  border-radius: 5px;
+  border-radius: 0px;
   margin-bottom: 25px;
   padding-top: 5px;
   background-color: #0078df;
@@ -151,9 +151,7 @@
   padding-left: 50px;
   padding-right: 50px;
 }
-/*
-  * Day styles
-  -------------------------*/
+
 .oitem {
   width: 6em;
   height: 6em;
