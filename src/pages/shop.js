@@ -13,7 +13,8 @@ class Shop extends React.Component {
           <h1 className={styles.landingheader}>Shop</h1>
         </div>
         <div className={styles.plcontainer}>
-          <hr />
+      
+          <div className={styles.rowborder}>
           <Link className={styles.plitem} to="/shop/neldolight">
           <img className={styles.productimg} width="100%" height="100%" src={web}/>
             <h3 className={styles.subheading}>Neldo Light</h3>
@@ -21,21 +22,23 @@ class Shop extends React.Component {
             <span className={styles.productitemprice}>$699</span>
            
           </Link>
-          <hr />
+          </div>
+          <div className={styles.rowborder}>
           <Link className={styles.plitem} to="/shop/neldo">
           <img className={styles.productimg} width="100%" height="100%" src={web}/>
             <h3 className={styles.subheading}>Neldo</h3>
             <p className={styles.productitemdesc}>dsfasdfafdasfsadfasfdas</p>
             <span className={styles.productitemprice}>$2999</span>
           </Link>
-          <hr />
+       </div>
+       <div className={styles.rowborder}>
           <Link className={styles.plitem} to="/shop/neldochamp">
           <img className={styles.productimg} width="100%" height="100%" src={web}/>
             <h3 className={styles.subheading}>Neldo Champ</h3>
             <p className={styles.productitemdesc}>dsfasdfafdasfsadfasfdas</p>
             <span className={styles.productitemprice}>$4999</span>
           </Link>
-          <hr />
+       </div>
         </div>
       </Layout>
     )
