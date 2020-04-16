@@ -48,7 +48,7 @@ class Neldolight extends React.Component {
         </span>
         <Tab />
         <div className="wrapper">
-        <h1>Neldo Light</h1>
+        <h1 className={styles.detailheader}>Neldo Light</h1>
           <br />
           <div className={styles.mobile}>
      

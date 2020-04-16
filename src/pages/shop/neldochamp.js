@@ -47,8 +47,8 @@ class Neldochamp extends React.Component {
         </span>
 
         <Tab />
-        <div class="wrapper">
-          <h1>Neldo Champ</h1>
+        <div className="wrapper">
+          <h1 className={styles.detailheader}>Neldo Champ</h1>
           <br />
           <div className={styles.mobile}>
             <Popup />

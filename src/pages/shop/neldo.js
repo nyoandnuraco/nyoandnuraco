@@ -47,7 +47,7 @@ class Neldo extends React.Component {
         </span>
         <Tab />
         <div class="wrapper">
-          <h1>Neldo</h1>
+          <h1 className={styles.detailheader}>Neldo</h1>
           <br />
           <div className={styles.mobile}>
             <Popup />

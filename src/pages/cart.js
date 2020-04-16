@@ -8,13 +8,14 @@ class Cart extends React.Component {
     super(props);
     this.state = {
       removeItem: false,
+      cartCount: 0
     };
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick(e) {
       e.preventDefault();
     this.setState({
-      removeItem: true
+      removeItem: true,
     });
   }
   render() {
@@ -45,7 +46,7 @@ class Cart extends React.Component {
           <br />
           <div className={styles.sidebyside}>
             <h2 className={styles.headercart}>Your Cart</h2>
-            <h4 className={styles.itemnumber}>1 Item</h4>
+            <h4 className={styles.itemnumber}>{this.state.cartCount} Item</h4>
           </div>
           <hr />
           <h6 style={this.state.removeItem ? remove : keep} className={styles.cartitemdesc}>

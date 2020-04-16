@@ -29,8 +29,11 @@ class Book extends React.Component {
           <p className={styles.pitem}>Choose a date and time to book your initial consultation appointment:</p>
 <br/><br/>
 <div className={styles.wrapper}>
-<input placeholder="April 2020" className={styles.monthSelector} type="select" />
-
+  <button className={styles.previousArrow}>
+   -
+  </button>
+<p className={styles.monthSelector}>April 2020 </p>
+<button className={styles.nextArrow}> + </button>
 </div>
 <div className={styles.col}>
   <div className={styles.day}>

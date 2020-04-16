@@ -1,155 +1,155 @@
-.smimgbox{
-    width:25px;
-    height:25px; 
-    background-color: #d8d8d8;
-    float:left;
-
-  }
-  .plcontainer{
-    margin:25px;
-  }
-  .row{
-   display:none;
-  }
-  .column{
-    display:none;
-   
-  }
-
-  .rowborder{
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    margin:10px;
-    border:2px solid #d8d8d8;
-    padding:25px;
-  }
-  .rowborder a:hover{
-    cursor:pointer;
-    text-decoration: none;
-    background-color:#d8d8d8;
-    list-style:none;
-  }
-.rowborder:hover{
-  background-color:#d8d8d8;
+.smimgbox {
+  width: 25px;
+  height: 25px;
+  background-color: #d8d8d8;
+  float: left;
 }
-  .exit{
-    float:right;
-    font-size:16px;
-    padding:5px;
-    padding-left:10px;
-    padding-right:10px;
-    border:2px solid #bbb;
-    border-radius:5px;
-    color:#bbb;
-    margin-bottom:25px;
-  }
-  .exit:hover{
-    cursor:pointer;
-  }
-  .smimgbox{
-    height: 24px;
-    width: 24px;
-    margin: 10px;
-    background-color: #d8d8d8;
-    display: inline-block;
-    float:left;
- }
-
-   .popopen{
-    background-image:url('./geometric-decoration.jpg'),
-   }
-
-  .popupimg{
-    width:100%;
-    height: auto;
-  }
-
-   .imgbox:hover{
-     cursor:pointer;
-   }
-
-   .smimgbox:hover{
-    cursor:pointer;
-  }
-
- #ctabtn{
-     float:right;
-     background-color:#FF9000;
-     color:#ffffff;
-     border-radius:25px;
-     margin-left:25px;
-     margin-right:25px;
-     padding-left:25px;
-     padding-right:25px;
-     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-     margin-bottom:50px;
-     text-transform:uppercase;
-     font-size:14px;
-     font-weight:medium;
-     margin-top:25px;
-     
- }
-
- #maincta{
-  background-color:#FF9000;
-  color:#ffffff;
-  border-radius:25px;
-  margin-left:25px;
-  margin-right:25px;
-  padding-left:25px;
-  padding-right:25px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  margin-bottom:50px;
-  text-transform:uppercase;
-  font-size:14px;
-  font-weight:medium;
-  margin-top:25px;
-  
+.plcontainer {
+  margin: 25px;
 }
- 
+.row {
+  display: none;
+}
+.column {
+  display: none;
+}
+.detailheader{
+  margin:0;
+  color:rgba(0, 0, 0, 0.68);
+}
+.rowborder {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin: 10px;
+  border: 2px solid #d8d8d8;
+  padding: 25px;
+}
+.rowborder a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #d8d8d8;
+  list-style: none;
+}
+.rowborder:hover {
+  background-color: #d8d8d8;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+.exit {
+  float: right;
+  font-size: 16px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid #bbb;
+  border-radius: 5px;
+  color: #bbb;
+  margin-bottom: 25px;
+}
+.exit:hover {
+  cursor: pointer;
+}
+.smimgbox {
+  height: 24px;
+  width: 24px;
+  margin: 10px;
+  background-color: #d8d8d8;
+  display: inline-block;
+  float: left;
+}
+
+.popopen {
+  background-image: url("./geometric-decoration.jpg");
+}
+
+.popupimg {
+  width: 70vw;
+  height: 50vh;
+  padding-bottom:25px;
+}
+
+.imgbox:hover {
+  cursor: pointer;
+}
+
+.smimgbox:hover {
+  cursor: pointer;
+}
+
+#ctabtn {
+  float: right;
+  background-color: #ff9000;
+  color: #ffffff;
+  border-radius: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: medium;
+  margin-top: 25px;
+}
+
+#maincta {
+  background-color: #ff9000;
+  color: #ffffff;
+  border-radius: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: medium;
+  margin-top: 25px;
+}
+
 #active {
   border-bottom: 2px solid #0146c9;
-  color:#0146c9;
+  color: #0146c9;
   font-weight: bolder;
 }
 
-
- #inactive{
-  color:#000000;
-  opacity:.68;
+#inactive {
+  color: #000000;
+  opacity: 0.68;
 }
 
- .subnav{
-     border-top:2px solid #d8d8d8;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-  
- }
- .hero {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 61.8vh;
-    max-height: 400px;
-    background: #e1e1e1;
-    font-size: 2em;
-    overflow: hidden;
-    background: #ffffff;
-    
-  }
-  .landingheader{
-    margin:25px;
-    font-size:96px;
-    background: #ffffff;
-    color:#0146c9;
-    line-height:1.1;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
+.subnav {
+  border-top: 2px solid #d8d8d8;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 61.8vh;
+  max-height: 400px;
+  background: #e1e1e1;
+  font-size: 2em;
+  overflow: hidden;
+  background: #ffffff;
+}
+.landingheader {
+  margin: 25px;
+  font-size: 96px;
+  background: #ffffff;
+  color: #0146c9;
+  line-height: 1.1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 
-#detailssubheader{
-  text-align:left;
+#detailssubheader {
+  text-align: left;
 }
 
 #cartcount {
@@ -162,28 +162,27 @@
   margin-bottom: 50px;
   position: relative;
   padding-right: 12px;
-  display:none;
-
+  display: none;
 }
-.productimg{
-  float:right;
+.productimg {
+  float: right;
   width: 150px;
 }
 
-.subheading{
-  color:rgba(0,0,0,.68);
+.subheading {
+  color: rgba(0, 0, 0, 0.68);
 }
 
-.productitemdesc{
-  color:rgba(0,0,0,.68); 
+.productitemdesc {
+  color: rgba(0, 0, 0, 0.68);
 }
 
-.productitemprice{
-  color:rgba(0,0,0,.68); 
+.productitemprice {
+  color: rgba(0, 0, 0, 0.68);
 }
 
-.plitem{
-  text-decoration:none;
+.plitem {
+  text-decoration: none;
 }
 
 .navigation-module--cartimg--lTI4X {
@@ -195,32 +194,32 @@
   margin-left: 50px;
 }
 
-.cartimg{
-  margin-left:50px;
-  padding-left:50px;
-  display:block;
+.cartimg {
+  margin-left: 50px;
+  padding-left: 50px;
+  display: block;
 }
 
-.col{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 25px;
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
-.breadcrumb{
+.breadcrumb {
   height: 15px;
   width: 15px;
-  margin:10px;
+  margin: 10px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.productsum{
-  margin-top:25px;
+.productsum {
+  margin-top: 25px;
 }
 
 .container {
@@ -231,130 +230,149 @@
   align-items: center;
 }
 
-
-.imgbox{
+.imgbox {
   width: 80vw;
-    height: 25vh;
-    display: inline-block;
-    float:left;
-    margin:25px;
-    background-image:url('./geometric-decoration.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 5px solid transparent;
-    border-radius:5px;
-   }
-   .designImage{
-    width: 80vw;
-    height: 25vh;
-    min-width: 250px;
-    display: inline-block;
-    float:left;
-    margin:25px;
-    background-image:url('./shop/black-pencils-and-design-word.jpg');
-    background-size: cover;
-    background-repeat: no-repeat; 
-    border: 5px solid transparent;
-    border-radius:5px;
-   }
-   .webImage{
-    width: 80vw;
-    height: 25vh;
-    min-width: 250px;
-    display: inline-block;
-    float:left;
-    margin:25px;
-    background-image:url('./web.jpg');
-    background-size: cover;
-    background-repeat: no-repeat; 
-    border: 5px solid transparent;
-    border-radius:5px;
-   }
-   .notebookImage{
-    width: 80vw;
-    height: 25vh;
-    min-width: 250px;
-    display: inline-block;
-    float:left;
-    margin:25px;
-    background-image:url('./notebook-beside-the-iphone-on-table.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 5px solid transparent;
-    border-radius:5px;
-   }
-   .artImage{
-    width: 80vw;
-    height: 25vh;
-    min-width: 250px;
-    display: inline-block;
-    float:left;
-    margin:25px;
-    background-image:url('./abstract-art-cobweb-connection.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 5px solid transparent;
-    border-radius:5px;
-   }
+  height: 200px;
+  display: inline-block;
+  float: left;
+  margin: 25px;
+  background-image: url("./geometric-decoration.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid transparent;
+  border-radius: 5px;
+}
+.designImage {
+  width: 80vw;
+  height: 200px;
+  min-width: 250px;
+  display: inline-block;
+  margin: 25px;
+  background-image: url("./shop/black-pencils-and-design-word.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid transparent;
+  border-radius: 5px;
+}
+.webImage {
+  width: 80vw;
+  height: 200px;
+  min-width: 250px;
+  display: inline-block;
+  float: left;
+  margin: 25px;
+  background-image: url("./web.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid transparent;
+  border-radius: 5px;
+}
+.notebookImage {
+  width: 80vw;
+  min-height: 200px;
+  min-width: 250px;
+  display: inline-block;
+  float: left;
+  margin: 25px;
+  background-image: url("./notebook-beside-the-iphone-on-table.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid transparent;
+  border-radius: 5px;
+}
+.artImage {
+  width: 80vw;
+  height: 200px;
+  min-width: 250px;
+  display: inline-block;
+  float: left;
+  margin: 25px;
+  background-image: url("./abstract-art-cobweb-connection.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid transparent;
+  border-radius: 5px;
+}
 
-  
 @media only screen and (min-width: 768px) {
   .plcontainer {
-   display:flex;
-   flex-direction: row;
-   justify-content:center;
-   align-items:center;
-   padding: 25px;
-   margin:25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin: 25px;
   }
 
-  .imgbox{
-    width:533.5px;
+  .imgbox {
+    width: 533.5px;
+    height: 355.7px;
+  }
+
+  .artImage {
+    width: 533.5px;
+    height: 355.7px;
+  }
+
+  .designImage {
+    width: 533.5px;
+    height: 355.7px;
+  }
+  .notebookImage{
+    width: 533.5px;
     height: 355.7px; 
   }
 
-  .column{
-    display:flex;
-    flex-direction:column;
+  .webImage{
+    width: 533.5px;
+    height: 355.7px; 
   }
 
-  .row{
-    display:flex;
-    flex-direction:row;
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
   }
 
-  .col{
-    display:flex;
-    flex-direction:row;
-  }
-
-  .breadcrumb{
-    display:none;
-  }
-
-  .mobile{
-    display:none;
-  }
-
-  .productimg{
-    width:100%;
-    padding: 25px;
-    margin:25px;
-    margin-bottom:0px;
-    display:flex;
+  .col {
+    display: flex;
     flex-direction: row;
-    justify-content:center;
-    align-items:center;
   }
-  .productitemprice{
-    float:right;
-    margin-right:25px;
-    padding-right:25px;
+
+  .breadcrumb {
+    display: none;
   }
-  .productsum{
-   display:inline-block;
-   max-width: 33vw;
+
+  .mobile {
+    display: none;
+  }
+
+  .productimg {
+    padding: 25px;
+    margin: 25px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+  }
+  .expandImage{
+    height:100vh;
+  }
+  .productitemprice {
+    float: right;
+    margin-right: 25px;
+    padding-right: 25px;
+  }
+  .productsum {
+    display: inline-block;
+    max-width: 33vw;
   }
 }
