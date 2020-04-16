@@ -55,70 +55,15 @@
     float:left;
  }
 
- .imgbox{
-    width:266.75px;
-    height: 177.85px; 
-    min-width: 250px;
-    display: inline-block;
-    float:left;
-    margin:25px;
-    background-image:url('./geometric-decoration.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-   }
-   .designImage{
-    width:266.75px;
-    height: 177.85px; 
-    min-width: 250px;
-    display: inline-block;
-    float:left;
-    margin:25px;
-    background-image:url('./shop/black-pencils-and-design-word.jpg');
-    background-size: contain;
-    background-repeat: no-repeat; 
-   }
-   .webImage{
-    width:266.75px;
-    height: 177.85px; 
-    min-width: 250px;
-    display: inline-block;
-    float:left;
-    margin:25px;
-    background-image:url('./web.jpg');
-    background-size: contain;
-    background-repeat: no-repeat; 
-   }
-   .notebookImage{
-    width:266.75px;
-    height: 177.85px; 
-    min-width: 250px;
-    display: inline-block;
-    float:left;
-    margin:25px;
-    background-image:url('./notebook-beside-the-iphone-on-table.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-   }
-   .logo{
-    width:266.75px;
-    height: 177.85px; 
-    min-width: 250px;
-    display: inline-block;
-    float:left;
-    margin:25px;
-    background-image:url('./abstract-art-cobweb-connection.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-   }
-
-
    .popopen{
     background-image:url('./geometric-decoration.jpg'),
    }
-.popupimg{
-  width:100%;
-  height: auto;
-}
+
+  .popupimg{
+    width:100%;
+    height: auto;
+  }
+
    .imgbox:hover{
      cursor:pointer;
    }
@@ -144,6 +89,7 @@
      margin-top:25px;
      
  }
+
  #maincta{
   background-color:#FF9000;
   color:#ffffff;
@@ -173,10 +119,6 @@
   opacity:.68;
 }
 
- .item{
-  
-  
- }
  .subnav{
      border-top:2px solid #d8d8d8;
       width: 100%;
@@ -210,6 +152,7 @@
 #detailssubheader{
   text-align:left;
 }
+
 #cartcount {
   background-color: red;
   padding: 10px;
@@ -227,20 +170,23 @@
   float:right;
   width: 150px;
 }
+
 .subheading{
   color:rgba(0,0,0,.68);
 }
+
 .productitemdesc{
   color:rgba(0,0,0,.68); 
 }
+
 .productitemprice{
   color:rgba(0,0,0,.68); 
- 
 }
+
 .plitem{
   text-decoration:none;
- 
 }
+
 .navigation-module--cartimg--lTI4X {
   width: 100px;
   height: auto;
@@ -249,11 +195,13 @@
   position: absolute;
   margin-left: 50px;
 }
+
 .cartimg{
   margin-left:50px;
   padding-left:50px;
   display:block;
 }
+
 .col{
     display: flex;
     flex-direction: column;
@@ -261,7 +209,7 @@
     align-items: center;
     margin-bottom: 25px;
 }
-/*533.5 × 3557*/
+
 .breadcrumb{
   height: 15px;
   width: 15px;
@@ -271,9 +219,11 @@
   display: inline-block;
   cursor:pointer;
 }
+
 .productsum{
   margin-top:25px;
 }
+
 .container {
   width: 100%;
   display: flex;
@@ -282,6 +232,63 @@
   align-items: center;
 }
 
+
+.imgbox{
+  width: 80vw;
+    height: 25vh;
+    display: inline-block;
+    float:left;
+    margin:25px;
+    background-image:url('./geometric-decoration.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+   .designImage{
+    width: 80vw;
+    height: 25vh;
+    min-width: 250px;
+    display: inline-block;
+    float:left;
+    margin:25px;
+    background-image:url('./shop/black-pencils-and-design-word.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+   }
+   .webImage{
+    width: 80vw;
+    height: 25vh;
+    min-width: 250px;
+    display: inline-block;
+    float:left;
+    margin:25px;
+    background-image:url('./web.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+   }
+   .notebookImage{
+    width: 80vw;
+    height: 25vh;
+    min-width: 250px;
+    display: inline-block;
+    float:left;
+    margin:25px;
+    background-image:url('./notebook-beside-the-iphone-on-table.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+   .logo{
+    width: 80vw;
+    height: 25vh;
+    min-width: 250px;
+    display: inline-block;
+    float:left;
+    margin:25px;
+    background-image:url('./abstract-art-cobweb-connection.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+
+  
 @media only screen and (min-width: 768px) {
   .plcontainer {
    display:flex;
@@ -290,42 +297,47 @@
    align-items:center;
    padding: 25px;
    margin:25px;
-
   }
+
   .imgbox{
     width:533.5px;
     height: 355.7px; 
   }
+
   .column{
     display:flex;
     flex-direction:column;
-   
   }
+
   .row{
     display:flex;
     flex-direction:row;
     justify-content: space-evenly;
     align-items: center;
   }
+
   .col{
     display:flex;
     flex-direction:row;
   }
+
   .breadcrumb{
     display:none;
   }
-.mobile{
-  display:none;
-}
+
+  .mobile{
+    display:none;
+  }
+
   .productimg{
     width:100%;
     padding: 25px;
-   margin:25px;
-   margin-bottom:0px;
-   display:flex;
-   flex-direction: row;
-   justify-content:center;
-   align-items:center;
+    margin:25px;
+    margin-bottom:0px;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
   }
   .productitemprice{
     float:right;

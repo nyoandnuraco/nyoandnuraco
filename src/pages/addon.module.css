@@ -142,8 +142,8 @@
   }
  
  .imgbox{
-    width:200px;
-    height: 150px; 
+   width:80vw;
+   height:25vh;
     background-color: #d8d8d8;
     display: inline-block;
     float:left;
