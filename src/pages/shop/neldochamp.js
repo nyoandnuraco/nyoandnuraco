@@ -5,6 +5,8 @@ import styles from "../shop.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Tab from "../../components/tab";
 import Popup from "../../components/popup";
+import DesktopImgGallary from "../../components/desktop-img-gallary";
+
 class Neldochamp extends React.Component {
   constructor(props) {
     super(props);
@@ -51,16 +53,7 @@ class Neldochamp extends React.Component {
           <div className={styles.mobile}>
             <Popup />
           </div>
-          <div className={styles.row}>
-            <div className={styles.column}>
-              <div className={styles.smimgbox}></div>
-              <div className={styles.smimgbox}></div>
-              <div className={styles.smimgbox}></div>
-              <div className={styles.smimgbox}></div>
-              <div className={styles.smimgbox}></div>
-            </div>
-            <Popup />
-          </div>
+          <DesktopImgGallary />
           <span>
             Price: <i>$699</i>
           </span>
@@ -77,7 +70,10 @@ class Neldochamp extends React.Component {
           <br /> <br />
           <h4 className={styles.detailssubheader}>Details:</h4>
           <br />
-          <p>Complete Custom made Brand Style Guide, Website Development and CMS for maintainability which includes:</p>
+          <p>
+            Complete Custom made Brand Style Guide, Website Development and CMS
+            for maintainability which includes:
+          </p>
           <ul>
             <li>Mission Statement</li>
             <li>Typography</li>

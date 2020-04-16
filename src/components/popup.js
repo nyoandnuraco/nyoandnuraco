@@ -61,7 +61,7 @@ class Popup extends React.Component {
       <div className={styles.col}>
         <button
           onClick={(e) => this.expandImage(e)}
-          className={styles.imgbox}
+          className={this.state.breadcrumb == "5" ? styles.imgbox : this.state.breadcrumb == "6" ? styles.designImage : this.state.breadcrumb == "7" ? styles.notebookImage : this.state.breadcrumb == "8" ? styles.webImage : this.state.breadcrumb == "9" ? styles.logo : '' }
         ></button>
         <div
           style={this.state.expandImage == true ? popupopen : nostyle}

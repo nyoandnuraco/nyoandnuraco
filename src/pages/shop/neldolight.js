@@ -5,6 +5,7 @@ import styles from "../shop.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Tab from "../../components/tab";
 import Popup from "../../components/popup";
+import DesktopImgGallary from "../../components/desktop-img-gallary";
 
 class Neldolight extends React.Component {
   constructor(props) {
@@ -53,17 +54,7 @@ class Neldolight extends React.Component {
      
        <Popup />
        </div>
-          <div className={styles.row}>
-            <div className={styles.column}>
-              <div className={styles.smimgbox}></div>
-              <div className={styles.smimgbox}></div>
-              <div className={styles.smimgbox}></div>
-              <div className={styles.smimgbox}></div>
-              <div className={styles.smimgbox}></div>
-            </div>
-            <Popup />
-         
-          </div>
+         <DesktopImgGallary/>
           <span>
             Price: <i>$699</i>
           </span>

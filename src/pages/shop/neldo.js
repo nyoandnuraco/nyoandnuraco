@@ -3,12 +3,9 @@ import { Link } from "gatsby";
 import Layout from "../../components/layout";
 import styles from "../shop.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Tab from '../../components/tab';
-import ProductDetail from '../../components/product-detail';
-import Popup from '../../components/popup';
-import designImage from '../geometric-decoration.jpg';
-import pencilImage from './black-pencils-and-design-word.jpg';
-
+import Tab from "../../components/tab";
+import DesktopImgGallary from "../../components/desktop-img-gallary";
+import Popup from "../../components/popup";
 
 class Neldo extends React.Component {
   constructor(props) {
@@ -25,7 +22,6 @@ class Neldo extends React.Component {
     });
     var element = document.getElementById("cartcount");
     element.classList.add("mystyle");
-   
   }
   render() {
     const mystyle = {
@@ -49,27 +45,14 @@ class Neldo extends React.Component {
         <span style={this.state.count !== 0 ? mystyle : nostyle}>
           {this.state.count}
         </span>
-       <Tab/>
-       <div class="wrapper">
+        <Tab />
+        <div class="wrapper">
           <h1>Neldo</h1>
           <br />
           <div className={styles.mobile}>
-            <Popup/>
-          </div>
-          <div className={styles.row}>
-            <div className={styles.column}>
-              <div className={styles.smimgbox}>
-                <img src={designImage}/>
-              </div>
-              <div className={styles.smimgbox}>
-              <img src={pencilImage}/>
-              </div>
-              <div className={styles.smimgbox}></div>
-              <div className={styles.smimgbox}></div>
-              <div className={styles.smimgbox}></div>
-            </div>
             <Popup />
           </div>
+          <DesktopImgGallary />
           <span>
             Price: <i>$2,999</i>
           </span>
@@ -86,7 +69,10 @@ class Neldo extends React.Component {
           <br /> <br />
           <h4 className={styles.detailssubheader}>Details:</h4>
           <br />
-          <p>Complete Custom made Brand Style Guide, Mockup and Website Development which includes:</p>
+          <p>
+            Complete Custom made Brand Style Guide, Mockup and Website
+            Development which includes:
+          </p>
           <ul>
             <li>Mission Statement</li>
             <li>Typography</li>

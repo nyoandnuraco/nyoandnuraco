@@ -45,11 +45,57 @@
     min-width: 250px;
     display: inline-block;
     float:left;
-  margin:25px;
+    margin:25px;
     background-image:url('./geometric-decoration.jpg');
     background-size: contain;
     background-repeat: no-repeat;
    }
+   .designImage{
+    width:266.75px;
+    height: 177.85px; 
+    min-width: 250px;
+    display: inline-block;
+    float:left;
+    margin:25px;
+    background-image:url('./shop/black-pencils-and-design-word.jpg');
+    background-size: contain;
+    background-repeat: no-repeat; 
+   }
+   .webImage{
+    width:266.75px;
+    height: 177.85px; 
+    min-width: 250px;
+    display: inline-block;
+    float:left;
+    margin:25px;
+    background-image:url('./web.jpg');
+    background-size: contain;
+    background-repeat: no-repeat; 
+   }
+   .notebookImage{
+    width:266.75px;
+    height: 177.85px; 
+    min-width: 250px;
+    display: inline-block;
+    float:left;
+    margin:25px;
+    background-image:url('./notebook-beside-the-iphone-on-table.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+   }
+   .logo{
+    width:266.75px;
+    height: 177.85px; 
+    min-width: 250px;
+    display: inline-block;
+    float:left;
+    margin:25px;
+    background-image:url('./abstract-art-cobweb-connection.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+   }
+
+
    .popopen{
     background-image:url('./geometric-decoration.jpg'),
    }
