@@ -1,10 +1,9 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styles from '../pages/shop.module.css'
+import React from "react";
+import { Link } from "gatsby";
+import styles from "../pages/shop.module.css";
 
 export default (props) => (
-    <div class="wrapper">
-  
+  <div className="wrapper">
     <div className={styles.row}>
       <div className={styles.column}>
         <div className={styles.smimgbox}></div>
@@ -13,19 +12,13 @@ export default (props) => (
         <div className={styles.smimgbox}></div>
         <div className={styles.smimgbox}></div>
       </div>
-
       <div className={styles.imgbox}></div>
- 
-      <div>{props.productsummary}
-      
-      </div>
-
+      <div>{props.productsummary}</div>
     </div>
- Price: <i>{props.productprice}</i>
-   <br />  <br />  <br />  <br />
+    Price: <i>{props.productprice}</i>
+    <br /> <br /> <br /> <br />
     <h4 id={styles.detailssubheader}>Details:</h4>
     <br />
-<p>{props.productdetails}</p>
-
+    <p>{props.productdetails}</p>
   </div>
-)
+);

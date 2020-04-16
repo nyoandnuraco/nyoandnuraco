@@ -8,26 +8,38 @@ import notebookImage from "../pages/notebook-beside-the-iphone-on-table.jpg";
 import styles from "../pages/shop.module.css";
 
 class DesktopImgGallary extends React.Component {
-  
+  constructor(props){
+    super(props);
+    this.state = {
+      imageSelected: "5"
+    }
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick(e){
+    e.preventDefault();
+    this.setState({
+      count: this.state.count + 1,
+    });
+  }
   render() {
     return (
       <div className={styles.row}>
         <div className={styles.column}>
-          <div className={styles.smimgbox}>
+          <button onClick={(e) => this.handleClick(e)} className={styles.smimgbox}>
             <img src={pencilImage} />
-          </div>
-          <div className={styles.smimgbox}>
+          </button>
+          <button className={styles.smimgbox}>
             <img src={designImage} />
-          </div>
-          <div className={styles.smimgbox}>
+          </button>
+          <button className={styles.smimgbox}>
             <img src={web} />
-          </div>
-          <div className={styles.smimgbox}>
+          </button>
+          <button className={styles.smimgbox}>
             <img src={notebookImage} />
-          </div>
-          <div className={styles.smimgbox}>
+          </button>
+          <button className={styles.smimgbox}>
             <img src={logo} />
-          </div>
+          </button>
         </div>
         <Popup />
       </div>
