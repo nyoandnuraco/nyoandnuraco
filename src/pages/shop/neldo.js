@@ -6,6 +6,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Tab from '../../components/tab';
 import ProductDetail from '../../components/product-detail';
 import Popup from '../../components/popup';
+import designImage from '../geometric-decoration.jpg';
+import pencilImage from './black-pencils-and-design-word.jpg';
+
 
 class Neldo extends React.Component {
   constructor(props) {
@@ -55,8 +58,12 @@ class Neldo extends React.Component {
           </div>
           <div className={styles.row}>
             <div className={styles.column}>
-              <div className={styles.smimgbox}></div>
-              <div className={styles.smimgbox}></div>
+              <div className={styles.smimgbox}>
+                <img src={designImage}/>
+              </div>
+              <div className={styles.smimgbox}>
+              <img src={pencilImage}/>
+              </div>
               <div className={styles.smimgbox}></div>
               <div className={styles.smimgbox}></div>
               <div className={styles.smimgbox}></div>
@@ -90,9 +97,7 @@ class Neldo extends React.Component {
             <li>Photography Guidelines</li>
             <li>Full Website Development</li>
           </ul>
-     
-     
-    </div>
+        </div>
       </Layout>
     );
   }

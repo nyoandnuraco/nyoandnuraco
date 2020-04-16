@@ -1,6 +1,11 @@
 import React from "react";
 import styles from "../pages/shop.module.css";
 import designImage from '../pages/geometric-decoration.jpg';
+import pencilImage from '../pages/shop/black-pencils-and-design-word.jpg';
+import notebookImage from '../pages/notebook-beside-the-iphone-on-table.jpg';
+
+import webImage from '../pages/web.jpg';
+import logo from '../components/nyoandnuralogo.png';
 
 class Popup extends React.Component {
   constructor(props) {
@@ -65,9 +70,10 @@ class Popup extends React.Component {
           <button onClick={(e) => this.collapsePopup(e)} className={styles.exit}>
             X
           </button>
+        
           <img
             className={styles.popupimg}
-            src={designImage}
+            src={this.state.breadcrumb == "5" ? pencilImage : this.state.breadcrumb == "6" ? designImage : this.state.breadcrumb == "7" ? notebookImage : this.state.breadcrumb == "8" ? webImage : this.state.breadcrumb == "9" ? logo : ''}
             width="100%"
             height="100%"
           />
