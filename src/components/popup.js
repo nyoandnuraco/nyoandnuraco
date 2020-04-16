@@ -5,7 +5,7 @@ import pencilImage from '../pages/shop/black-pencils-and-design-word.jpg';
 import notebookImage from '../pages/notebook-beside-the-iphone-on-table.jpg';
 
 import webImage from '../pages/web.jpg';
-import logo from '../components/nyoandnuralogo.png';
+import artImage from '../pages/abstract-art-cobweb-connection.jpg';
 
 class Popup extends React.Component {
   constructor(props) {
@@ -43,7 +43,7 @@ class Popup extends React.Component {
       backgroundColor: "white",
       padding: "25px",
       width: "90vw",
-      height: "70vh",
+      height: "65vh",
       position: "absolute",
       border: "2px solid #d8d8d8",
       borderRadius: "5px",
@@ -61,7 +61,7 @@ class Popup extends React.Component {
       <div className={styles.col}>
         <button
           onClick={(e) => this.expandImage(e)}
-          className={this.state.breadcrumb == "5" ? styles.imgbox : this.state.breadcrumb == "6" ? styles.designImage : this.state.breadcrumb == "7" ? styles.notebookImage : this.state.breadcrumb == "8" ? styles.webImage : this.state.breadcrumb == "9" ? styles.logo : '' }
+          className={this.state.breadcrumb == "5" ? styles.designImage : this.state.breadcrumb == "6" ? styles.imgbox : this.state.breadcrumb == "7" ? styles.notebookImage : this.state.breadcrumb == "8" ? styles.webImage : this.state.breadcrumb == "9" ? styles.artImage : '' }
         ></button>
         <div
           style={this.state.expandImage == true ? popupopen : nostyle}
@@ -70,10 +70,10 @@ class Popup extends React.Component {
           <button onClick={(e) => this.collapsePopup(e)} className={styles.exit}>
             X
           </button>
-        
+     
           <img
             className={styles.popupimg}
-            src={this.state.breadcrumb == "5" ? pencilImage : this.state.breadcrumb == "6" ? designImage : this.state.breadcrumb == "7" ? notebookImage : this.state.breadcrumb == "8" ? webImage : this.state.breadcrumb == "9" ? logo : ''}
+            src={this.state.breadcrumb == "5" ? pencilImage : this.state.breadcrumb == "6" ? designImage : this.state.breadcrumb == "7" ? notebookImage : this.state.breadcrumb == "8" ? webImage : this.state.breadcrumb == "9" ? artImage : ''}
             width="100%"
             height="100%"
           />

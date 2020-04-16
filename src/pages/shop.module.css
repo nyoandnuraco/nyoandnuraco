@@ -33,14 +33,13 @@
 }
   .exit{
     float:right;
-    font-size:24px;
+    font-size:16px;
     padding:5px;
     padding-left:10px;
     padding-right:10px;
-   margin-right:25px;
-    border:2px solid rgba(0,0,0,.68);
+    border:2px solid #bbb;
     border-radius:5px;
-    color:rgba(0,0,0,.68);
+    color:#bbb;
     margin-bottom:25px;
   }
   .exit:hover{
@@ -242,6 +241,8 @@
     background-image:url('./geometric-decoration.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    border: 5px solid transparent;
+    border-radius:5px;
    }
    .designImage{
     width: 80vw;
@@ -253,6 +254,8 @@
     background-image:url('./shop/black-pencils-and-design-word.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
+    border: 5px solid transparent;
+    border-radius:5px;
    }
    .webImage{
     width: 80vw;
@@ -264,6 +267,8 @@
     background-image:url('./web.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
+    border: 5px solid transparent;
+    border-radius:5px;
    }
    .notebookImage{
     width: 80vw;
@@ -275,8 +280,10 @@
     background-image:url('./notebook-beside-the-iphone-on-table.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    border: 5px solid transparent;
+    border-radius:5px;
    }
-   .logo{
+   .artImage{
     width: 80vw;
     height: 25vh;
     min-width: 250px;
@@ -286,6 +293,8 @@
     background-image:url('./abstract-art-cobweb-connection.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    border: 5px solid transparent;
+    border-radius:5px;
    }
 
   
