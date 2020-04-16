@@ -3,7 +3,34 @@ import Layout from '../components/layout'
 import styles from './book.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Link } from 'gatsby'
+
 class Book extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      month: 0,
+      months:["April 2020", "May 2020", "June 2020", "July 2020", "August 2020", "September 2020", "October 2020", "November 2020", "December 2020", "January 2021", "February 2021", "March 2021"]
+    }
+    this.showPreviousMonth = this.showPreviousMonth.bind(this);
+    this.showNextMonth = this.showNextMonth.bind(this);
+  }
+  showPreviousMonth(e){
+    e.preventDefault();
+    if(this.state.month !== 0){
+    this.setState({
+      month: this.state.month - 1,
+    });
+  }
+  }
+  showNextMonth(e){
+    e.preventDefault();
+    if(this.state.month !== 11){
+    this.setState({
+      month: this.state.month + 1,
+    });
+  }
+  }
   render() {
 
     return (
@@ -29,11 +56,11 @@ class Book extends React.Component {
           <p className={styles.pitem}>Choose a date and time to book your initial consultation appointment:</p>
 <br/><br/>
 <div className={styles.wrapper}>
-  <button className={styles.previousArrow}>
+  <button onClick={e => this.showPreviousMonth(e)} className={styles.previousArrow}>
    -
   </button>
-<p className={styles.monthSelector}>April 2020 </p>
-<button className={styles.nextArrow}> + </button>
+    <p className={styles.monthSelector}>{this.state.months[this.state.month]}</p>
+<button onClick={e => this.showNextMonth(e)} className={styles.nextArrow}> + </button>
 </div>
 <div className={styles.col}>
   <div className={styles.day}>

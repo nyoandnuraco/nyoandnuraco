@@ -18,7 +18,7 @@ class DesktopImgGallary extends React.Component {
   handleClick(e){
     e.preventDefault();
     this.setState({
-      count: this.state.count + 1,
+      imageSelected: "6"
     });
   }
   render() {
