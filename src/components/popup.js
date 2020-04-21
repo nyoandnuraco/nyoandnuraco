@@ -136,15 +136,7 @@ class Popup extends React.Component {
             style={this.state.breadcrumb === "9" ? activecrumb : inactivecrumb}
           ></button>
         </div>
-        <p className={styles.productsum}>
-          {typeof window !== "undefined"
-            ? window.location.href.split("/")[4] === "neldolight"
-              ? "Stand out from competition let us design everything and map out user interactions to optimize user experience. For see potential problems, get customers through the checkout process and keep them happy. Custom built Brand Style Guide for your company, and Mockup."
-              : window.location.href.split("/")[4] === "neldo"
-              ? "Stand out from competition let us design everything and map out user interactions to optimize user experience. For see potential problems, get customers through the checkout process and keep them happy. Custom built Brand Style Guide for your company, Mockup, and complete website development"
-              : "Must have top notch maintainable custom made websites to fit your needs. Stand out from competition let us design everything and map out user interactions to optimize user experience. For see potential problems, get customers through the checkout process and keep them happy. Custom built Brand Style Guide for your company, Mockup, complete website development, and CMS added for future maintainability."
-            : ""}
-        </p>
+      
       </div>
     );
   }
