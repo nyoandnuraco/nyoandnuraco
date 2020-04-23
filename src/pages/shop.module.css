@@ -76,7 +76,7 @@
   cursor: pointer;
 }
 
-#ctabtn {
+.ctabtn {
   float: right;
   background-color: #ff9000;
   color: #ffffff;
