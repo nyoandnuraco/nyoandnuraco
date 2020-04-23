@@ -3,6 +3,7 @@ import './base.css'
 import Container from './container'
 import Navigation from './navigation'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import CartContextProvider from '../contexts/CartContext'
 
 class Template extends React.Component {
   render() {
@@ -10,10 +11,10 @@ class Template extends React.Component {
     
     return (
       <Container>
-  
-        <Navigation />
-      
-        {children}
+        <CartContextProvider>
+          <Navigation />
+          {children}
+        </CartContextProvider>
       </Container>
     )
   }
