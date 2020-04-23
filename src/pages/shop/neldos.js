@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import uuid from 'uuid/v1';
+import AddPackageForm from './addPackageForm';
+
 const Neldos = () => {
     const [products, setProducts] = useState([
         { package: 'neldo', id:1 }
     ]);
-    const addProduct = () => {
-        setProducts([...products, { package: 'neldo', id: uuid()}]);
+    const addProduct = (pkg) => {
+        setProducts([...products, { package: pkg, id: uuid()}]);
     }
     return(
         <div>
@@ -18,7 +20,7 @@ const Neldos = () => {
                     )
                 })}
             </ul>
-            <button onClick={addProduct}>Add To Cart</button>
+            <AddPackageForm addProduct={addProduct} />
         </div>
     )
 }

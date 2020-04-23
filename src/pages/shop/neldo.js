@@ -7,7 +7,7 @@ import Tab from "../../components/tab";
 import DesktopImgGallary from "../../components/desktop-img-gallary";
 import Popup from "../../components/popup";
 import Neldos from './neldos'
-import AddPackageForm from './addPackageForm';
+
 class Neldo extends React.Component {
   constructor(props) {
     super(props);
@@ -70,7 +70,7 @@ class Neldo extends React.Component {
             </button>
      
           </Link>
-          <AddPackageForm />
+
           <br /> <br />
           <br /> <br />
         <Neldos />

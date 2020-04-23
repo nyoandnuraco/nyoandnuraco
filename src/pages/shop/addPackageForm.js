@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 
-const AddPackageForm = () => {
+const AddPackageForm = ({ addProduct }) => {
   const [pkg, setPackage] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
     let pkg = window.location.href.split("/")[4];
-    console.log(pkg);
+    addProduct(pkg);
   };
   return (
     <form onSubmit={handleSubmit}>
+    
       <input
         className="btn text-white btn-lg ctabtn"
         type="submit"
