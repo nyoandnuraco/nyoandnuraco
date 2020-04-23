@@ -6,6 +6,7 @@ import icon from './shopping-cart-icon.png';
 import ItemCounter from './item-counter';
 
 export default () => (
+
   <nav className={styles.mainnav} role="navigation">
     <ul className={styles.navigation}>
       <li className={styles.navigationItem}>
@@ -22,11 +23,8 @@ export default () => (
       <li className={styles.navigationItem}>
         <Link to="/blog/">Blog</Link>
       </li>
-   
       <li className={styles.navigationItem}>
- 
         <Link to="/cart/">
-          
           <div className={styles.cartItems}>
           <ItemCounter />
               <img alt="cart" className={styles.cartimg} height="100%" width="64px" src={icon}/>
@@ -35,5 +33,6 @@ export default () => (
       </li>
     </ul>
   </nav>
+
 )
 

@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Tab from "../../components/tab";
 import DesktopImgGallary from "../../components/desktop-img-gallary";
 import Popup from "../../components/popup";
+import Neldos from './neldos'
 
 class Neldo extends React.Component {
   constructor(props) {
@@ -20,8 +21,8 @@ class Neldo extends React.Component {
     this.setState({
       count: this.state.count + 1,
     });
-    var element = document.getElementById("cartcount");
-    element.classList.add("mystyle");
+   // var element = document.getElementById("cartcount");
+  //  element.classList.add("mystyle");
   }
   render() {
     const mystyle = {
@@ -41,11 +42,13 @@ class Neldo extends React.Component {
       display: "none",
     };
     return (
+
       <Layout location={this.props.location}>
+  
         <span style={this.state.count !== 0 ? mystyle : nostyle}>
           {this.state.count}
         </span>
-        <Tab />
+        <Tab /> 
         <div class="wrapper">
           <h1 className={styles.detailheader}>Neldo</h1>
           <br />
@@ -56,6 +59,7 @@ class Neldo extends React.Component {
           <span>
             Price: <i>$2,999</i>
           </span>
+
           <Link to="/cart/">
             <button
               onClick={(e) => this.handleClick(e)}
@@ -64,9 +68,11 @@ class Neldo extends React.Component {
             >
               Add to Cart
             </button>
+     
           </Link>
           <br /> <br />
           <br /> <br />
+          <Neldos />
           <h4 className={styles.detailssubheader}>Details:</h4>
           <br />
           <p>
@@ -84,7 +90,9 @@ class Neldo extends React.Component {
             <li>Full Website Development</li>
           </ul>
         </div>
+  
       </Layout>
+
     );
   }
 }

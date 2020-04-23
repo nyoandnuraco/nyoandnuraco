@@ -41,6 +41,7 @@ class Neldochamp extends React.Component {
       display: "none",
     };
     return (
+
       <Layout location={this.props.location}>
         <span style={this.state.countc !== 0 ? mystyle : nostyle}>
           {this.state.countc}
@@ -66,6 +67,7 @@ class Neldochamp extends React.Component {
               Add to Cart
             </button>
           </Link>
+
           <br /> <br />
           <br /> <br />
           <h4 className={styles.detailssubheader}>Details:</h4>

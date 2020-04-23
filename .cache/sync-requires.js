@@ -19,6 +19,7 @@ exports.components = {
   "component---src-pages-shop-neldo-js": hot(preferDefault(require("/Users/nyeraeldomiaty/Documents/GitHub/nn/nyoandnuraco/src/pages/shop/neldo.js"))),
   "component---src-pages-shop-neldochamp-js": hot(preferDefault(require("/Users/nyeraeldomiaty/Documents/GitHub/nn/nyoandnuraco/src/pages/shop/neldochamp.js"))),
   "component---src-pages-shop-neldolight-js": hot(preferDefault(require("/Users/nyeraeldomiaty/Documents/GitHub/nn/nyoandnuraco/src/pages/shop/neldolight.js"))),
+  "component---src-pages-shop-neldos-js": hot(preferDefault(require("/Users/nyeraeldomiaty/Documents/GitHub/nn/nyoandnuraco/src/pages/shop/neldos.js"))),
   "component---src-pages-shoppingcartpage-js": hot(preferDefault(require("/Users/nyeraeldomiaty/Documents/GitHub/nn/nyoandnuraco/src/pages/shoppingcartpage.js"))),
   "component---src-pages-time-js": hot(preferDefault(require("/Users/nyeraeldomiaty/Documents/GitHub/nn/nyoandnuraco/src/pages/time.js")))
 }
