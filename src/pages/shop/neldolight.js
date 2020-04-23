@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Tab from "../../components/tab";
 import Popup from "../../components/popup";
 import DesktopImgGallary from "../../components/desktop-img-gallary";
-
+import Neldos from './neldos';
 class Neldolight extends React.Component {
   constructor(props) {
     super(props);
@@ -58,6 +58,7 @@ class Neldolight extends React.Component {
           <span>
             Price: <i>$699</i>
           </span>
+          <Neldos/>
           <Link to="/cart/">
             <button
               onClick={(e) => this.handleClick(e)}
