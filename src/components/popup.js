@@ -58,7 +58,7 @@ class Popup extends React.Component {
     };
     return (
       <div className={styles.col}>
-        <button
+         <button
           onClick={(e) => this.expandImage(e)}
           className={
             this.state.breadcrumb == "5"
@@ -73,7 +73,27 @@ class Popup extends React.Component {
               ? styles.artImage
               : ""
           }
-        ></button>
+        >
+           <img
+          className={styles.popupimg}
+          src={
+            this.state.breadcrumb == "5"
+              ? pencilImage
+              : this.state.breadcrumb == "6"
+              ? designImage
+              : this.state.breadcrumb == "7"
+              ? notebookImage
+              : this.state.breadcrumb == "8"
+              ? webImage
+              : this.state.breadcrumb == "9"
+              ? artImage
+              : ""
+          }
+          width="100%"
+          height="100%"
+        />
+       
+     </button><br/><br/><br/><br/>
         <div
           style={this.state.expandImage == true ? popupopen : nostyle}
           id={styles.popup}
