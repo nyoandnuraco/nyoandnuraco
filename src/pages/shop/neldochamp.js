@@ -7,6 +7,7 @@ import Tab from "../../components/tab";
 import Popup from "../../components/popup";
 import DesktopImgGallary from "../../components/desktop-img-gallary";
 import Neldos from './neldos';
+import AddToCart from '../../components/AddToCart'
 class Neldochamp extends React.Component {
   constructor(props) {
     super(props);
@@ -43,6 +44,7 @@ class Neldochamp extends React.Component {
     return (
 
       <Layout location={this.props.location}>
+                <AddToCart />
         <span style={this.state.countc !== 0 ? mystyle : nostyle}>
           {this.state.countc}
         </span>
@@ -58,6 +60,7 @@ class Neldochamp extends React.Component {
           <span>
             Price: <i>$699</i>
           </span>
+  
           <Neldos />
           <Link to="/cart/">
             <button

@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { Component, useContext } from 'react'
 import { Link } from 'gatsby'
 import styles from './navigation.module.css'
 import logo from './nyoandnuralogo.png';
 import icon from './shopping-cart-icon.png';
 import ItemCounter from './item-counter';
-
-export default () => (
-
-  <nav className={styles.mainnav} role="navigation">
+import CartContextProvider, { CartContext } from '../contexts/CartContext';
+import SlideNav from './SlideNav';
+import { ProductContext } from '../contexts/ProductContext'
+const Navbar = () => {
+const {redCounter, noItems, cartCount } = useContext(CartContext);
+const { products } = useContext(ProductContext);
+ return( 
+ <nav className={styles.mainnav} role="navigation">
     <ul className={styles.navigation}>
       <li className={styles.navigationItem}>
         <Link to="/">
@@ -24,15 +28,22 @@ export default () => (
         <Link to="/blog/">Blog</Link>
       </li>
       <li className={styles.navigationItem}>
+     
         <Link to="/cart/">
           <div className={styles.cartItems}>
           <ItemCounter />
+          {products.length}
               <img alt="cart" className={styles.cartimg} height="100%" width="64px" src={icon}/>
           </div>
         </Link>
+      </li>
+      <li>
+  
       </li>
     </ul>
   </nav>
 
 )
+}
 
+export default Navbar

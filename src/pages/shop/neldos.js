@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import uuid from 'uuid/v1';
 import AddPackageForm from './addPackageForm';
 
@@ -9,6 +9,9 @@ const Neldos = () => {
     const addProduct = (pkg) => {
         setProducts([...products, { package: pkg, id: uuid()}]);
     }
+    useEffect(() => {
+        console.log('useeffect hook run', products);
+    })
     return(
         <div>
             <ul>

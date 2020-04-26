@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
+import React, { useContext } from 'react';
 import { CartContext } from '../contexts/CartContext'
 
-class  AddToCart extends Component {
-    static contextType = CartContext;
-    render() { 
-        const { addToCart } = this.context;
-        return ( 
-            <button onClick={addToCart}>Add To Cart</button>
-         );
-    }
+
+const AddToCart = () => {
+    const { addToCart } = useContext(CartContext)
+    return (
+        <button onClick={addToCart}>Add To Cart</button>
+    );
 }
  
 export default AddToCart;

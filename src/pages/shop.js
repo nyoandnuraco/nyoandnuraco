@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'gatsby'
 import styles from './shop.module.css'
 import Layout from '../components/layout'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import web from './web.jpg'
+import AddToCart from '../components/AddToCart'
+
+
 class Shop extends React.Component {
   render() {
     return (
@@ -20,7 +23,7 @@ class Shop extends React.Component {
             <h3 className={styles.subheading}>Neldo Light</h3>
             <p className={styles.productitemdesc}>dsfasdfafdasfsadfasfdas</p>
             <span className={styles.productitemprice}>$699</span>
-           
+           <AddToCart />
           </Link>
           </div>
           <div className={styles.rowborder}>
@@ -43,7 +46,7 @@ class Shop extends React.Component {
       </Layout>
     )
   }
-}
+};
 
 export default Shop
 
