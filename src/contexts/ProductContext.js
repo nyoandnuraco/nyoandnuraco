@@ -5,12 +5,16 @@ export const ProductContext = createContext();
 
 const ProductContextProvider = (props) => {
     const [products, dispatch] = useReducer(productReducer, [], () => 
-    { 
+    { if (typeof window !== 'undefined') {
         const localData = localStorage.getItem('products');
         return localData ? JSON.parse(localData) : [];
+    }
     });
+  
     useEffect(() => {
-        localStorage.setItem('products', JSON.stringify(products))
+       
+        if (typeof window !== 'undefined') {
+             localStorage.setItem('products', JSON.stringify(products))}
     }, [products]);
     return ( 
         <ProductContext.Provider value={{products, dispatch}}>

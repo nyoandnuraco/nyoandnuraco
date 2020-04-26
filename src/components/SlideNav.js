@@ -11,7 +11,7 @@ const SlideNav = () => {
     position: "absolute",
     color: "red",
   };
-  return products.length ? (
+  return typeof window !== 'undefined' ? (products.length ? (
     <div id={styles.show} className="container">
       <h1 className={styles.header}>Checkout</h1>
       <div className={styles.checkout}>
@@ -27,7 +27,7 @@ const SlideNav = () => {
       </div>
       <div className={styles.sidebyside}>
         <h2 className={styles.headercart}>Your Cart</h2>
-        <h4 className={styles.itemnumber}> {products.length} Items</h4>
+        <h4 className={styles.itemnumber}> {typeof window !== 'undefined' ? (products.length):("")} Items</h4>
       </div>
       <hr />
       <ul className={styles.cartlist}>
@@ -45,6 +45,6 @@ const SlideNav = () => {
     </div>
   ) : (
     <div styles={{ cartlist }}>There are No items in your cart...</div>
-  );
+  )):("");
 };
 export default SlideNav;

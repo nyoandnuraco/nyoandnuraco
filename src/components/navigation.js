@@ -35,7 +35,7 @@ const show ={
 
           <div className={styles.cartItems}>
           <ItemCounter />
-          {products.length}
+        { typeof window !== 'undefined' ? (products.length):("")}
               <img alt="cart" className={styles.cartimg} height="100%" width="64px" src={icon}/>
           </div>
          </Link>

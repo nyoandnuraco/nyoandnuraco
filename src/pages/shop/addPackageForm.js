@@ -2,14 +2,16 @@ import React, { useContext, useState } from "react";
 import { ProductContext } from '../../contexts/ProductContext';
 
 const AddPackageForm = () => {
-  const { dispatch } = useContext(ProductContext);
+
+   const { dispatch } = useContext(ProductContext);
+ 
   const [pkg, setPackage] = useState("");
   const [price, setPrice] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
     setPrice(699);
     let pkg = window.location.href.split("/")[4];
-    //addProduct(pkg);
+   // addProduct(pkg);
     dispatch({type: 'ADD_PRODUCT', product: {
       package:pkg, price
     }})
@@ -40,7 +42,7 @@ const AddPackageForm = () => {
         }}
         onClick={(e) => setPackage(e.target.value)}
         value={
-          "Add " + `${window.location.href.split("/")[4]}` + " Package To Cart"
+          "Add " + `${typeof window !== 'undefined' ? (window.location.href.split("/")[4]):("")}` + " Package To Cart"
         }
       />
     </form>

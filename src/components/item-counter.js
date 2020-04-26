@@ -20,10 +20,10 @@ const ItemCounter = () => {
       paddingBottom: counter.paddingBottom,
       marginRight: counter.marginRight,
       paddingTop: counter.paddingTop,
-      content: products.length !== 0 ? `${products.length}` : "",
+      content: typeof window !== 'undefined' ? (products.length !== 0 ? `${products.length}` : ""):(""),
     }}
   >  
-{/*products.length > 0 ? products.length : ""*/}
+
   </span>
 
    );

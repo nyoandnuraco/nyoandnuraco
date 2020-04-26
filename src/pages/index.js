@@ -8,8 +8,9 @@ import Layout from "../components/layout";
 import ArticlePreview from "../components/article-preview";
 import styles from "./index.module.css";
 import logo from "../components/nyoandnuralogo.png";
+
 class RootIndex extends React.Component {
- 
+
   render() {
     const siteTitle = get(this, "props.data.site.siteMetadata.title");
     const posts = get(this, "props.data.allContentfulBlogPost.edges");
