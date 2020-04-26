@@ -23,7 +23,7 @@ class Shop extends React.Component {
             <h3 className={styles.subheading}>Neldo Light</h3>
             <p className={styles.productitemdesc}>dsfasdfafdasfsadfasfdas</p>
             <span className={styles.productitemprice}>$699</span>
-           <AddToCart />
+   
           </Link>
           </div>
           <div className={styles.rowborder}>

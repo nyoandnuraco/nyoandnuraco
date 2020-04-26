@@ -25,30 +25,13 @@ class Neldochamp extends React.Component {
     element.classList.add("mystyle");
   }
   render() {
-    const mystyle = {
-      color: "white",
-      backgroundColor: "red",
-      padding: "10px",
-      paddingLeft: "12px",
-      borderRadius: "50%",
-      fontSize: "8px",
-      marginBottom: "150px",
-      position: "absolute",
-      paddingRight: "12px",
-      marginTop: "-82px",
-      marginLeft: "82vw",
-    };
     const nostyle = {
       display: "none",
     };
     return (
 
       <Layout location={this.props.location}>
-                <AddToCart />
-        <span style={this.state.countc !== 0 ? mystyle : nostyle}>
-          {this.state.countc}
-        </span>
-
+    
         <Tab />
         <div className="wrapper">
           <h1 className={styles.detailheader}>Neldo Champ</h1>

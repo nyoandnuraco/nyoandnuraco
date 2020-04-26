@@ -24,7 +24,7 @@ const Cart = () => {
       <br />
       <div className={styles.sidebyside}>
         <h2 className={styles.headercart}>Your Cart</h2>
-       {/* <h4 className={styles.itemnumber}>{this.state.cartCount} Item</h4> */}
+
       </div>
       <hr />
       <h6 className={styles.cartitemdesc}>

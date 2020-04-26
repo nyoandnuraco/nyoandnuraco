@@ -8,7 +8,8 @@ import DesktopImgGallary from "../../components/desktop-img-gallary";
 import Popup from "../../components/popup";
 import Neldos from './neldos'
 import SlideNav from '../../components/SlideNav'
-class Neldo extends React.Component {
+import ProductDetails from "../../components/ProductDetails";
+class CartCheckout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -43,62 +44,21 @@ class Neldo extends React.Component {
     };
     const mystyle = {
       display:"block",
-    };
+    }
     const nostyle = {
       display: "none",
     };
     return (
 
       <Layout location={this.props.location}>
-
-        <Tab /> 
-        <div class="wrapper">
-          <h1 className={styles.detailheader}>Neldo</h1>
-          <br />
-          <div className={styles.mobile}>
-            <Popup />
-          </div>
-          <DesktopImgGallary />
-          <span>
-            Price: <i>$2,999</i>
-          </span>
-
-          <Link to="/cart/">
-            <button
-              onClick={(e) => this.handleClick(e)}
-              id={styles.ctabtn}
-              className="btn text-white btn-lg"
-            >
-              Add to Cart
-            </button>
-     
-          </Link>
-
-          <br /> <br />
-          <br /> <br />
-        <Neldos />
-          <h4 className={styles.detailssubheader}>Details:</h4>
-          <br />
-          <p>
-            Complete Custom made Brand Style Guide, Mockup and Website
-            Development which includes:
-          </p>
-          <ul>
-            <li>Mission Statement</li>
-            <li>Typography</li>
-            <li>Logo Design</li>
-            <li>Color Palette</li>
-            <li>Iconography</li>
-            <li>Hierarchy</li>
-            <li>Photography Guidelines</li>
-            <li>Full Website Development</li>
-          </ul>
-        </div>
-  
+        <span style={this.state.count !== 0 ? mystyle : nostyle}>
+   
+          <SlideNav />
+        </span>  
       </Layout>
 
     );
   }
 }
 
-export default Neldo;
+export default CartCheckout;
