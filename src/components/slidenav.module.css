@@ -157,5 +157,7 @@
 }
 
 #show{
-    display:"block"
+    display:block;
+    text-align:center;
+margin-left:0px;
 }

@@ -51,6 +51,7 @@ class CartCheckout extends React.Component {
     return (
 
       <Layout location={this.props.location}>
+
         <span style={this.state.count !== 0 ? mystyle : nostyle}>
    
           <SlideNav />

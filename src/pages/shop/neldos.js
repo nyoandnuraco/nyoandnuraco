@@ -14,7 +14,7 @@ const Neldos = () => {
     })
     return(
         <div>
-            <ul>
+            <ul style={{display:"none"}}>
                 {products.map(product => { 
                     return ( 
                     <li key={product.id}>
