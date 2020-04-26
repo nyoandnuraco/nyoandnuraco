@@ -36,8 +36,7 @@ const SlideNav = () => {
         <span className={styles.step}>2</span>
         <div className={styles.progressbar}></div>
         <span className={styles.step}>3</span>
-        <div className={styles.progressbar}></div>
-        <span className={styles.step}>4</span>
+  
       </div>
       <div className={styles.sidebyside}>
         <h2 className={styles.headercart}>Your Cart</h2>

@@ -17,10 +17,9 @@ class Addon extends React.Component {
             </span>
             <div className={styles.filled}></div>
             <span className={styles.active}>2</span>
+
             <div className={styles.filled}></div>
             <span className={styles.active}>3</span>
-            <div className={styles.filled}></div>
-            <span className={styles.active}>4</span>
           </div>
           <br /><br/>
           <h2 className={styles.secondheader}>...You might enjoy letting us take over the burden of updates and maintenance. </h2>

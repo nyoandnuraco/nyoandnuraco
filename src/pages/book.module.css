@@ -227,7 +227,7 @@
   height: 44px;
   background-color: #0078df;
   border: 2px solid transparent;
-  border-radius: 5px;
+
   color: #ffffff;
   margin-bottom: 25px;
 }
@@ -236,7 +236,17 @@
   height: 44px;
   background-color: #0078df;
   border: 2px solid transparent;
-  border-radius: 5px;
+  
   color: #ffffff;
   margin-bottom: 25px;
+}
+
+#timecol{
+ 
+  width: 30%;
+
+}
+
+#daycol{
+  width:70%;
 }
