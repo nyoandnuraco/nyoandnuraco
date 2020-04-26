@@ -1,7 +1,13 @@
 import React, { createContext, useReducer, useEffect } from 'react';
 import { productReducer } from '../reducers/productReducer';
-
-export const ProductContext = createContext();
+const defaultState = {
+    package:'',
+    price:799,
+    id:1
+  }
+  
+  export const ProductContext = React.createContext(defaultState)
+//export const ProductContext = createContext();
 
 const ProductContextProvider = (props) => {
     const [products, dispatch] = useReducer(productReducer, [], () => 

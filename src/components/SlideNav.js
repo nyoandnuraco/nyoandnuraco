@@ -11,6 +11,20 @@ const SlideNav = () => {
     position: "absolute",
     color: "red",
   };
+  var p = 0;
+  var myfunc = function(){ 
+    for(var i = 0; i < products.length; i++){ 
+      if(products[i].price === null || products[i].price === undefined){
+        products[i].price = 0;
+      }
+      else if (i === products.length){
+        return p;
+        }
+      else{
+        p += products[i].price; 
+        }
+      };
+    }
   return typeof window !== 'undefined' ? (products.length ? (
     <div id={styles.show} className="container">
       <h1 className={styles.header}>Checkout</h1>
@@ -38,7 +52,7 @@ const SlideNav = () => {
       <p className={styles.total}>
         Total:
         <span>
-          <i>$0</i>
+          <i>${myfunc(), p}</i>
         </span>
       </p>
       <button className={styles.secondarycta}>Continue to Checkout</button>

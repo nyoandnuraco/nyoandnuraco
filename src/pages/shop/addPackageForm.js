@@ -9,9 +9,22 @@ const AddPackageForm = () => {
   const [price, setPrice] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    setPrice(699);
+    var price;
     let pkg = window.location.href.split("/")[4];
-   // addProduct(pkg);
+    if(pkg === 'neldo'){
+      price = 2999;
+      setPrice(2999);
+  
+    }
+    else if(pkg === 'neldochamp'){
+      price = 4999;
+      setPrice(4999);
+
+    }
+    else{
+      setPrice(699);
+      price = 699;
+    }
     dispatch({type: 'ADD_PRODUCT', product: {
       package:pkg, price
     }})
