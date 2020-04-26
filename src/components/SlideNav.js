@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import styles from "./slidenav.module.css";
 import { ProductContext } from "../contexts/ProductContext";
 import ProductDetails from "../components/ProductDetails";
-
+import { Link } from 'gatsby';
 const SlideNav = () => {
   const { products } = useContext(ProductContext);
   const cartlist = {
@@ -55,7 +55,9 @@ const SlideNav = () => {
           <i>${myfunc(), p}</i>
         </span>
       </p>
+      <Link to="/book/">
       <button className={styles.secondarycta}>Continue to Checkout</button>
+      </Link>
     </div>
   ) : (
     <div styles={{ cartlist }}>There are No items in your cart...</div>
