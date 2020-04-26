@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import CartContextProvider from "../contexts/CartContext";
 import SlideNav from "./SlideNav";
 import ProductContextProvider from "../contexts/ProductContext";
-import Cart from "../pages/cart";
+import Checkout from "../pages/checkout";
 
 class Template extends React.Component {
   render() {
@@ -14,11 +14,15 @@ class Template extends React.Component {
     return (
       <ProductContextProvider>
         <CartContextProvider>
- 
-  <SlideNav/><br/><br/><br/>
+       
+   
+
+  
           <Container>
             <Navigation />
             {children}
+
+      
           </Container>
         </CartContextProvider>
       </ProductContextProvider>

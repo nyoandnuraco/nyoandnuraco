@@ -5,11 +5,14 @@ import logo from './nyoandnuralogo.png';
 import icon from './shopping-cart-icon.png';
 import ItemCounter from './item-counter';
 import CartContextProvider, { CartContext } from '../contexts/CartContext';
-import SlideNav from './SlideNav';
+//import SlideNav from './SlideNav';
 import { ProductContext } from '../contexts/ProductContext'
 const Navbar = () => {
 const {redCounter, noItems, cartCount } = useContext(CartContext);
 const { products } = useContext(ProductContext);
+const show ={
+  display:"block"
+}
  return( 
  <nav className={styles.mainnav} role="navigation">
     <ul className={styles.navigation}>
@@ -28,18 +31,16 @@ const { products } = useContext(ProductContext);
         <Link to="/blog/">Blog</Link>
       </li>
       <li className={styles.navigationItem}>
-     
-        <Link to="/cart/">
+      <Link to="/checkout/">
+
           <div className={styles.cartItems}>
           <ItemCounter />
           {products.length}
               <img alt="cart" className={styles.cartimg} height="100%" width="64px" src={icon}/>
           </div>
-        </Link>
+         </Link>
       </li>
-      <li>
   
-      </li>
     </ul>
   </nav>
 

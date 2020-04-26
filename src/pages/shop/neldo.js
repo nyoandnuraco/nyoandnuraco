@@ -7,25 +7,28 @@ import Tab from "../../components/tab";
 import DesktopImgGallary from "../../components/desktop-img-gallary";
 import Popup from "../../components/popup";
 import Neldos from './neldos'
-
+import SlideNav from '../../components/SlideNav'
 class Neldo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0,
+      count: 1,
     };
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick(e) {
     e.preventDefault();
+    let i ='neldo';
+    localStorage.setItem('item','neldo');
+  
     this.setState({
       count: this.state.count + 1,
     });
-   // var element = document.getElementById("cartcount");
-  //  element.classList.add("mystyle");
+   var element = document.getElementById("shows");
+    element.classList.add("nostyle");
   }
   render() {
-    const mystyle = {
+    const mystyles = {
       color: "white",
       backgroundColor: "red",
       padding: "10px",
@@ -38,15 +41,21 @@ class Neldo extends React.Component {
       marginTop: "-82px",
       marginLeft: "82vw",
     };
+    const mystyle = {
+      display:"block",
+    };
     const nostyle = {
       display: "none",
     };
     return (
 
       <Layout location={this.props.location}>
-  
+   
+     
+
         <span style={this.state.count !== 0 ? mystyle : nostyle}>
           {this.state.count}
+          <SlideNav />
         </span>
         <Tab /> 
         <div class="wrapper">

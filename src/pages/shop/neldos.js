@@ -4,7 +4,7 @@ import AddPackageForm from './addPackageForm';
 
 const Neldos = () => {
     const [products, setProducts] = useState([
-        { package: 'neldo', id:1 }
+        { package: 'neldo', price:699, id:1 }
     ]);
     const addProduct = (pkg) => {
         setProducts([...products, { package: pkg, id: uuid()}]);

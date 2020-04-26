@@ -151,3 +151,11 @@
 .sidebyside{
     margin-top:50px;
 }
+
+.container{
+    visibility: visible;
+}
+
+#show{
+    display:"block"
+}

@@ -1,23 +1,14 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useReducer, useEffect } from 'react';
 import uuid from 'uuid/v1';
+import { productReducer } from '../reducers/productReducer';
 
 export const ProductContext = createContext();
 
 const ProductContextProvider = (props) => {
-    const [products, setProducts] = useState([
-        {package: 'Neldo Light', price: 699, id:1},
-        {package: 'Neldo', price: 2999, id:2},
-        {package: 'Neldo Champ', price: 4999, id:3}
-    ]);
+    const [products, dispatch] = useReducer(productReducer, []);
 
-    const addProduct = (pkg, price) => {
-        setProducts([...products, {package: pkg, price, id: uuid()}]);
-    };
-    const removeProduct = (id) => {
-        setProducts(products.filter(product => product.id !== id));
-    };
     return ( 
-        <ProductContext.Provider value={{products, addProduct, removeProduct}}>
+        <ProductContext.Provider value={{products, dispatch}}>
             { props.children }
         </ProductContext.Provider>
      );

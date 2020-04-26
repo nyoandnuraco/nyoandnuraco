@@ -1,11 +1,18 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { ProductContext } from '../../contexts/ProductContext';
 
-const AddPackageForm = ({ addProduct }) => {
+const AddPackageForm = () => {
+  const { dispatch } = useContext(ProductContext);
   const [pkg, setPackage] = useState("");
+  const [price, setPrice] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
+    setPrice(699);
     let pkg = window.location.href.split("/")[4];
-    addProduct(pkg);
+    //addProduct(pkg);
+    dispatch({type: 'ADD_PRODUCT', product: {
+      package:pkg, price
+    }})
   };
   return (
     <form onSubmit={handleSubmit}>

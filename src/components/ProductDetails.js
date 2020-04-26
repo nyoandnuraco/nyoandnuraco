@@ -3,7 +3,7 @@ import { ProductContext } from '../contexts/ProductContext';
 import styles from "../components/slidenav.module.css";
 import logo from './nyoandnuralogo.png'
 const ProductDetails = ({ product }) => {
-    const { removeProduct } = useContext(ProductContext);
+    const { dispatch } = useContext(ProductContext);
     return (
         <li className={styles.cartitem}>
             <div className={styles.cc}>
@@ -28,7 +28,7 @@ const ProductDetails = ({ product }) => {
             </p>
             </div>
   
-            <button onClick={() => removeProduct(product.id)} className={styles.removecta}>
+            <button onClick={() => dispatch({type: 'REMOVE_PRODUCT', id: product.id})} className={styles.removecta}>
                 Remove Item
           </button>  <hr className={styles.hr}/>
       

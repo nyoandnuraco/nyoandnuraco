@@ -13,7 +13,7 @@ const SlideNav = () => {
     color:"red"
   }
   return products.length ? ( 
-<div className="container">
+<div id={styles.show} className="container">
 <h1 className={styles.header}>Checkout</h1>
 <div className={styles.checkout}>
         <span id={styles.active} className={styles.step}>

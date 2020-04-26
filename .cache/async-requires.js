@@ -19,6 +19,7 @@ exports.components = {
   "component---src-pages-shop-neldolight-js": () => import("./../src/pages/shop/neldolight.js" /* webpackChunkName: "component---src-pages-shop-neldolight-js" */),
   "component---src-pages-shop-neldos-js": () => import("./../src/pages/shop/neldos.js" /* webpackChunkName: "component---src-pages-shop-neldos-js" */),
   "component---src-pages-shoppingcartpage-js": () => import("./../src/pages/shoppingcartpage.js" /* webpackChunkName: "component---src-pages-shoppingcartpage-js" */),
-  "component---src-pages-time-js": () => import("./../src/pages/time.js" /* webpackChunkName: "component---src-pages-time-js" */)
+  "component---src-pages-time-js": () => import("./../src/pages/time.js" /* webpackChunkName: "component---src-pages-time-js" */),
+  "component---src-pages-checkout-js": () => import("./../src/pages/checkout.js" /* webpackChunkName: "component---src-pages-checkout-js" */)
 }
 
