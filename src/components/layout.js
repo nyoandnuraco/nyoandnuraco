@@ -8,7 +8,7 @@ import CartContextProvider from "../contexts/CartContext";
 import SlideNav from "./SlideNav";
 import ProductContextProvider from "../contexts/ProductContext";
 import Checkout from "../pages/checkout";
-import Main from './main';
+
 class Template extends React.Component {
     componentDidMount () {
     const script = document.createElement("script");
@@ -19,7 +19,7 @@ class Template extends React.Component {
     script.dataAmount="250000"; 
     script.dataName="nyoandnuraco"; 
     script.dataDescription="Neldo package";
-    //script.dataImage="./nyoandnuralogo.png"; 
+    script.dataImage="./nyoandnuralogo.png"; 
     script.dataLocale="auto";
     document.body.appendChild(script);
 } 
@@ -37,7 +37,7 @@ class Template extends React.Component {
             <Navigation />
             {children}
     
-<Main/>
+
           </Container>
         </CartContextProvider>
       </ProductContextProvider>

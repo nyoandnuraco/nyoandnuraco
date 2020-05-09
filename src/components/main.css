@@ -1,0 +1,43 @@
+
+button.btn.btn-outline-dark.text-white.btn-lg.cta {
+    float: right;
+    border-radius: 25px;
+    content: 'PAY WITH CARD';
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background-color:#0010BF;
+}
+
+
+#secondarycta{
+    margin-left:25px;
+    margin-right:25px;
+    padding-left:25px;
+    padding-right:25px;
+    background-color:#0010BF;
+    color:#ffffff;
+    border-radius:25px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight:medium;
+    float:right;
+    height:44px;
+    display:none;
+    content:'PAY WITH CARD';
+  }
+.stripeButton{
+    display:block;
+}
+
+button.addon-module--secondarycta--3VHuZ {
+    display: none;
+}
+
+button.stripe-button-el {
+    display: none;
+}

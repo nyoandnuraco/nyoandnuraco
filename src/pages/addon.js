@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./addon.module.css";
 import Layout from "../components/layout";
 import { Link } from "gatsby"
+import Main from '../components/main';
 
 class Addon extends React.Component {
   render() {
@@ -39,6 +40,7 @@ class Addon extends React.Component {
         <Link to="/addon/">
           <button className={styles.secondarycta}>Pay with Card</button>
           </Link>
+          <Main />
       </Layout>
     );
   }

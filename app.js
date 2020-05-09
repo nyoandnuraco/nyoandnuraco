@@ -19,7 +19,7 @@ app.use(express.static(`${__dirname}/publics`));
 
 //Index route
 
-app.get('/', (req, res) => {
+app.get('/addon', (req, res) => {
     res.render('index', {
         stripePublishableKey: keys.stripePublishableKey
     });
