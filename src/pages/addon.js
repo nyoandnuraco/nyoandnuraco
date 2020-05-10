@@ -1,12 +1,20 @@
 import React from "react";
 import styles from "./addon.module.css";
 import Layout from "../components/layout";
-import { Link } from "gatsby"
+import { Link } from "gatsby";
+import keys from '../../config/keys';
 import Main from '../components/main';
+import {Elements} from '@stripe/react-stripe-js';
+import {loadStripe} from '@stripe/stripe-js';
+var stripePublishableKey = keys.stripePublishableKey;
+const stripePromise = loadStripe(keys.stripePublishableKey);
+
 
 class Addon extends React.Component {
   render() {
+
     return (
+<Elements stripe={stripePromise}>
       <Layout location={this.props.location}>
         <br />
         <h1 className={styles.headera}>Checkout</h1>
@@ -40,8 +48,13 @@ class Addon extends React.Component {
         <Link to="/addon/">
           <button className={styles.secondarycta}>Pay with Card</button>
           </Link>
-          <Main />
+        
+  
+      <Main />
+  
+
       </Layout>
+      </Elements>
     );
   }
 }
