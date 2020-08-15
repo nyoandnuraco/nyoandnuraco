@@ -150,14 +150,15 @@ class Book extends React.Component {
             </div>
           </div>
           {this.state.showtimes ? ( 
-       
+          <div id={styles.timecol} className={styles.col}>
+            <br/>
             <StartBookTimer />
-        ): (<h4>No times available</h4>)}</div>
-        {/**</Layout> <Link to="/addon/">
+          </div>): (<h4>No times available</h4>)}</div>
+          <Link to="/addon/">
             <button className={styles.secondarycta}>
               Continue to Checkout
             </button>
-          </Link>**/}
+          </Link>
         </div>
       </Layout>
     )
