@@ -4,7 +4,8 @@ import styles from './book.module.css'
 import tstyles from './time.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Link } from 'gatsby'
-
+import MonthSelector from '../components/monthSelector'
+import StartBookTimer from './startBookTimer.js'
 class Book extends React.Component {
 
   constructor(props) {
@@ -15,12 +16,18 @@ class Book extends React.Component {
       month: 0,
       months: ["April 2020", "May 2020", "June 2020", "July 2020", "August 2020", "September 2020", "October 2020", "November 2020", "December 2020", "January 2021", "February 2021", "March 2021"]
     }
-    this.showPreviousMonth = this.showPreviousMonth.bind(this);
-    this.showNextMonth = this.showNextMonth.bind(this);
+    this.getPreviousMonth = this.getPreviousMonth.bind(this);
+    this.getNextMonth = this.getNextMonth.bind(this);
     this.showTimes = this.showTimes.bind(this);
   }
 
-  showPreviousMonth(e) {
+  getAvailableTimes = async (e) => {
+    e.preventDefault();
+    //const month = e.target.elements.month.value;
+   // const api_call = await fetch(``)
+  }
+
+  getPreviousMonth(e) {
     e.preventDefault();
     if (this.state.month !== 0) {
       this.setState({
@@ -29,13 +36,14 @@ class Book extends React.Component {
     }
   }
 
-  showNextMonth(e) {
+  getNextMonth = async (e) => {
     e.preventDefault();
     if (this.state.month !== 11) {
       this.setState({
         month: this.state.month + 1,
       });
     }
+    console.log(e.target.value);
   }
 
   showTimes(e){
@@ -69,13 +77,22 @@ class Book extends React.Component {
           <br /><br />
           <p className={styles.pitem}>Choose a date and time to book your initial consultation appointment:</p>
           <br /><br />
-          <div className={styles.wrapper}>
-            <button onClick={e => this.showPreviousMonth(e)} className={styles.previousArrow}> - </button>
-            <p className={styles.monthSelector}>{this.state.months[this.state.month]}</p>
-            <button onClick={e => this.showNextMonth(e)} className={styles.nextArrow}> + </button>
-          </div>
+
+<div className={styles.wrapper}>
+  {this.state.month === 0 ? 
+          <button disabled="true" className={styles.disabled} onClick={e => this.getPreviousMonth(e)}>  -  </button> :
+          <button className={styles.nextarrow} onClick={e => this.getPreviousMonth(e)}>  -  </button>}
+
+<div className={styles.monthSelector}>
+         <MonthSelector /><span className={styles.monthSelector}>{this.state.months[this.state.month]}</span>
+         </div>
+         {this.state.month === 11 ? 
+          <button disabled="true" className={styles.disabled} onClick={e => this.getPreviousMonth(e)}>  +  </button> :
+         <button value={this.state.month} className={styles.nextarrow} onClick={e => this.getNextMonth(e)}> + </button>}
+         </div>
           <div className="row">
           <div id={styles.daycol} className={styles.col}>
+    
             <div value={styles.date} onClick={(e)=> this.showTimes(e)} className={styles.day}>
               <div className="column">
                 <h6 className={styles.dayOfWeek}>Wednesday</h6>
@@ -133,27 +150,14 @@ class Book extends React.Component {
             </div>
           </div>
           {this.state.showtimes ? ( 
-          <div id={styles.timecol} className={styles.col}>
-              <h4>Available Appointment Slots for April {this.state.dayselected}</h4>
-          <p>Select a time for your appointment:</p>
        
-            <div className={tstyles.box}>
-            <span className={tstyles.time}>9:00 AM</span>
-          </div>
-          <div className={tstyles.box}>
-            <span className={tstyles.time}>10:00 AM</span>
-          </div>
-          <div className={tstyles.box}>
-            <span className={tstyles.time}>12:00 PM</span>
-          </div>
-          <div className={tstyles.box}>
-            <span className={tstyles.time}>3:00 PM</span>
-          </div></div>): (<h4>No times available</h4>)}</div>
-          <Link to="/addon/">
+            <StartBookTimer />
+        ): (<h4>No times available</h4>)}</div>
+        {/**</Layout> <Link to="/addon/">
             <button className={styles.secondarycta}>
               Continue to Checkout
             </button>
-          </Link>
+          </Link>**/}
         </div>
       </Layout>
     )

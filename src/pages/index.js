@@ -25,7 +25,7 @@ class RootIndex extends React.Component {
           <div className={styles.hero}>
             <h1 className={styles.landingheader}>
               NYO & <br />
-              NURA <br /> COMPANY
+              NURAH <br /> COMPANY
             </h1>
           </div>
           <div className="wrapper">

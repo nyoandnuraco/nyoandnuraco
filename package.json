@@ -24,10 +24,12 @@
     "gsap": "^3.2.6",
     "lodash": "^4.17.11",
     "material-components-web": "^6.0.0",
+    "onsenui": "^2.10.10",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.0",
+    "react-onsenui": "^1.11.2",
     "stripe": "^8.39.0",
     "uuid": "^7.0.3",
     "yarn": "^1.22.4"
