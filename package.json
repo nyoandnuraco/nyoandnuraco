@@ -21,6 +21,7 @@
     "gatsby-source-contentful": "^2.1.78",
     "gatsby-transformer-remark": "^2.1.6",
     "gh-pages": "^2.0.1",
+    "googleapis": "^59.0.0",
     "gsap": "^3.2.6",
     "lodash": "^4.17.11",
     "material-components-web": "^6.0.0",
