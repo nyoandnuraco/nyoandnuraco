@@ -4,10 +4,9 @@ import Layout from "../../components/layout";
 import styles from "../shop.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Tab from "../../components/tab";
-import Popup from "../../components/popup";
-import DesktopImgGallary from "../../components/desktop-img-gallary";
 import Neldos from './neldos';
 import AddToCart from '../../components/AddToCart'
+import ProductGallary from '../productGallary'
 class Neldochamp extends React.Component {
   constructor(props) {
     super(props);
@@ -33,13 +32,12 @@ class Neldochamp extends React.Component {
       <Layout location={this.props.location}>
     
         <Tab />
+        <ProductGallary colorPickerOptions={['#5d77f5', '#0fd085', '#ffba5b', '#f95e62', 'lightpink']} initialSelectedColor={'black'} />
         <div className="wrapper">
           <h1 className={styles.detailheader}>Neldo Champ</h1>
           <br />
-          <div className={styles.mobile}>
-            <Popup />
-          </div>
-          <DesktopImgGallary />
+      
+        
           <span>
             Price: <i>$699</i>
           </span>
