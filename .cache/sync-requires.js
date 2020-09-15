@@ -12,6 +12,7 @@ exports.components = {
   "component---src-pages-cart-js": hot(preferDefault(require("/Users/nyeraeldomiaty/Documents/GitHub/nn/nyoandnuraco/src/pages/cart.js"))),
   "component---src-pages-charge-js": hot(preferDefault(require("/Users/nyeraeldomiaty/Documents/GitHub/nn/nyoandnuraco/src/pages/charge.js"))),
   "component---src-pages-checkout-js": hot(preferDefault(require("/Users/nyeraeldomiaty/Documents/GitHub/nn/nyoandnuraco/src/pages/checkout.js"))),
+  "component---src-pages-date-picker-js": hot(preferDefault(require("/Users/nyeraeldomiaty/Documents/GitHub/nn/nyoandnuraco/src/pages/date-picker.js"))),
   "component---src-pages-gcalapi-js": hot(preferDefault(require("/Users/nyeraeldomiaty/Documents/GitHub/nn/nyoandnuraco/src/pages/gcalapi.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/nyeraeldomiaty/Documents/GitHub/nn/nyoandnuraco/src/pages/index.js"))),
   "component---src-pages-ourwork-js": hot(preferDefault(require("/Users/nyeraeldomiaty/Documents/GitHub/nn/nyoandnuraco/src/pages/ourwork.js"))),

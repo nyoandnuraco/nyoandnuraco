@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Link } from 'gatsby'
 import MonthSelector from '../components/monthSelector'
 import StartBookTimer from './startBookTimer.js'
+import DatePicker from './date-picker.js'
 class Book extends React.Component {
 
   constructor(props) {
@@ -79,17 +80,16 @@ class Book extends React.Component {
           <br /><br />
 
 <div className={styles.wrapper}>
+
   {this.state.month === 0 ? 
           <button disabled="true" className={styles.disabled} onClick={e => this.getPreviousMonth(e)}>  -  </button> :
           <button className={styles.nextarrow} onClick={e => this.getPreviousMonth(e)}>  -  </button>}
-
-<div className={styles.monthSelector}>
-         <MonthSelector /><span className={styles.monthSelector}>{this.state.months[this.state.month]}</span>
-         </div>
-         {this.state.month === 11 ? 
+    <span className={styles.monthSelector}>{this.state.months[this.state.month]}</span>
+{this.state.month === 11 ? 
           <button disabled="true" className={styles.disabled} onClick={e => this.getPreviousMonth(e)}>  +  </button> :
          <button value={this.state.month} className={styles.nextarrow} onClick={e => this.getNextMonth(e)}> + </button>}
          </div>
+         <DatePicker/>
           <div className="row">
           <div id={styles.daycol} className={styles.col}>
     
@@ -153,7 +153,8 @@ class Book extends React.Component {
           <div id={styles.timecol} className={styles.col}>
             <br/>
             <StartBookTimer />
-          </div>): (<h4>No times available</h4>)}</div>
+          </div>): (<h4>No times available</h4>)}
+          </div>
           <Link to="/addon/">
             <button className={styles.secondarycta}>
               Continue to Checkout

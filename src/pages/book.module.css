@@ -11,6 +11,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin:1.625rem;
 }
 .step {
   background-color: #ffffff;
@@ -237,7 +238,8 @@
   padding-left: 10px;
   padding-right: 10px;
   color: #fff;
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 0px 5px 5px 0px;
+
 }
 
 #timecol{

@@ -9,6 +9,7 @@ exports.components = {
   "component---src-pages-cart-js": () => import("./../src/pages/cart.js" /* webpackChunkName: "component---src-pages-cart-js" */),
   "component---src-pages-charge-js": () => import("./../src/pages/charge.js" /* webpackChunkName: "component---src-pages-charge-js" */),
   "component---src-pages-checkout-js": () => import("./../src/pages/checkout.js" /* webpackChunkName: "component---src-pages-checkout-js" */),
+  "component---src-pages-date-picker-js": () => import("./../src/pages/date-picker.js" /* webpackChunkName: "component---src-pages-date-picker-js" */),
   "component---src-pages-gcalapi-js": () => import("./../src/pages/gcalapi.js" /* webpackChunkName: "component---src-pages-gcalapi-js" */),
   "component---src-pages-index-js": () => import("./../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-ourwork-js": () => import("./../src/pages/ourwork.js" /* webpackChunkName: "component---src-pages-ourwork-js" */),
