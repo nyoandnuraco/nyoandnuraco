@@ -59,7 +59,7 @@ class Book extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <br /><br />
+        {/*<br /><br />
         <h1 className={styles.headera}>Checkout</h1>
         <br />
         <div className="container">
@@ -160,7 +160,7 @@ class Book extends React.Component {
               Continue to Checkout
             </button>
           </Link>
-        </div>
+        </div>*/}
       </Layout>
     )
   }
