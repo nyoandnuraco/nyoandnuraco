@@ -27,7 +27,8 @@ export default class ColorPicker extends Component {
             </div>
             <div className="card-actions">
               <div className="layout-row justify-content-center align-items-center" data-testid="colorPickerOptions">
-                {this.props.colorPickerOptions.map((color, index) => {
+              {this.props.colorPickerOptions ?
+                (this.props.colorPickerOptions.map((color, index) => {
                   return (
                     <div onClick={(e) => this.changeSelectedColor(e)}
                      style={{'backgroundColor':color}}
@@ -42,7 +43,7 @@ export default class ColorPicker extends Component {
                       key={color}
                     ></div>
                   );
-                })}
+                })) : ('')}
               </div>
             </div>
           </div>

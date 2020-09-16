@@ -3,10 +3,7 @@ import Layout from '../components/layout'
 import styles from './book.module.css'
 import tstyles from './time.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Link } from 'gatsby'
-import MonthSelector from '../components/monthSelector'
-import StartBookTimer from './startBookTimer.js'
-import DatePicker from './date-picker.js'
+
 class Book extends React.Component {
 
   constructor(props) {
