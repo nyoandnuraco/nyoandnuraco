@@ -11,6 +11,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin:1.625rem;
 }
 .step {
   background-color: #ffffff;
@@ -48,12 +49,10 @@
   height: 44px;
   border: 2px solid transparent;
   border-radius: 0px;
-  margin-bottom: 25px;
-  padding-top: 5px;
   background-color: #0078df;
   color: #ffffff;
   text-align: center;
-
+  padding-top:5px;
 }
 
 .secondarycta {
@@ -227,18 +226,20 @@
   height: 44px;
   background-color: #0078df;
   border: 2px solid transparent;
-
+  border-radius: 0px 5px 5px 0px  ;
   color: #ffffff;
   margin-bottom: 25px;
 }
-.nextArrow {
+.nextarrow {
   width: 44px;
   height: 44px;
   background-color: #0078df;
-  border: 2px solid transparent;
-  
-  color: #ffffff;
-  margin-bottom: 25px;
+  border: 5px solid #0078df;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+  border-radius: 0px 5px 5px 0px;
+
 }
 
 #timecol{
@@ -249,4 +250,19 @@
 
 #daycol{
   width:70%;
+}
+
+.disabled {
+  width: 44px;
+  height: 44px;
+  background: #d8d8d8;
+  border: 2px solid transparent;
+  box-shadow: aliceblue;
+  color:rgba(0, 0, 0, 0.68);
+  padding-left: 10px;
+  border-radius: 5px 0px 0px 5px;
+  padding-right: 10px;
+}
+.monthSelector{
+  color:white;
 }

@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import CartContextProvider from "../contexts/CartContext";
 import ProductContextProvider from "../contexts/ProductContext";
 
+
 class Template extends React.Component {
     componentDidMount () {
     const script = document.createElement("script");

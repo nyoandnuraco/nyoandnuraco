@@ -34,8 +34,7 @@ const SlideNav = () => {
         </span>
         <div className={styles.progressbar}></div>
         <span className={styles.step}>2</span>
-        <div className={styles.progressbar}></div>
-        <span className={styles.step}>3</span>
+     
   
       </div>
       <div className={styles.sidebyside}>

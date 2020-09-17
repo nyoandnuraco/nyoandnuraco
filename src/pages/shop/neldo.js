@@ -8,6 +8,7 @@ import DesktopImgGallary from "../../components/desktop-img-gallary";
 import Popup from "../../components/popup";
 import Neldos from './neldos'
 import SlideNav from '../../components/SlideNav'
+import ProductGallary from '../productGallary';
 class Neldo extends React.Component {
   constructor(props) {
     super(props);
@@ -52,13 +53,10 @@ class Neldo extends React.Component {
       <Layout location={this.props.location}>
 
         <Tab /> 
+        <ProductGallary colorPickerOptions={['#5d77f5', '#0fd085', '#ffba5b', '#f95e62', 'lightpink']} initialSelectedColor={'black'} />
         <div class="wrapper">
           <h1 className={styles.detailheader}>Neldo</h1>
           <br />
-          <div className={styles.mobile}>
-            <Popup />
-          </div>
-          <DesktopImgGallary />
           <span>
             Price: <i>$2,999</i>
           </span>

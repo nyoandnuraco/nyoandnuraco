@@ -15,8 +15,7 @@ const Cart = () => {
         </span>
         <div className={styles.progressbar}></div>
         <span className={styles.step}>2</span>
-        <div className={styles.progressbar}></div>
-        <span className={styles.step}>3</span>
+
       </div>
       <br />
       <br />

@@ -4,9 +4,8 @@ import Layout from "../../components/layout";
 import styles from "../shop.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Tab from "../../components/tab";
-import Popup from "../../components/popup";
-import DesktopImgGallary from "../../components/desktop-img-gallary";
 import Neldos from './neldos';
+import ProductGallary from '../productGallary';
 class Neldolight extends React.Component {
   constructor(props) {
     super(props);
@@ -47,14 +46,11 @@ class Neldolight extends React.Component {
           {this.state.countl}
         </span>
         <Tab />
+        <ProductGallary colorPickerOptions={['#5d77f5', '#0fd085', '#ffba5b', '#f95e62', 'lightpink']} initialSelectedColor={'black'} />
         <div className="wrapper">
         <h1 className={styles.detailheader}>Neldo Light</h1>
           <br />
-          <div className={styles.mobile}>
-     
-       <Popup />
-       </div>
-         <DesktopImgGallary/>
+       
           <span>
             Price: <i>$699</i>
           </span>
