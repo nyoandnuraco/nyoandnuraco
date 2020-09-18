@@ -2,6 +2,5 @@
   ID = "a1edbf92-deaf-4e06-828a-04a4f5eddd1a"
 
 [build]
-  base = "frontend"
   Publish = "build"
   Functions = ""
