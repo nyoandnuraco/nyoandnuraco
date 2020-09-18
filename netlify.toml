@@ -1,6 +1,7 @@
 [Settings]
   ID = "a1edbf92-deaf-4e06-828a-04a4f5eddd1a"
 
-[Build]
+[build]
+  base = "frontend"
   Publish = ""
   Functions = ""
