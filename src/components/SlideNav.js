@@ -53,7 +53,7 @@ const SlideNav = () => {
           <i>${myfunc(), p}</i>
         </span>
       </p>
-      <Link to="/book/">
+      <Link to="/addon/">
       <button className={styles.secondarycta}>Continue to Checkout</button>
       </Link>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "gatsby";
 import styles from './cart.module.css';
 import Layout from '../components/layout'
 import logo from '../components/nyoandnuralogo.png'
@@ -60,11 +60,11 @@ const Cart = () => {
           <i>$0</i>
         </span>
       </p>
-
+      <Link to="/addon/">
         <button className={styles.secondarycta}>
           Continue to Checkout
         </button>
-
+</Link>
       <br />
     </div>
     <br /> <br />
