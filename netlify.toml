@@ -3,5 +3,5 @@
 
 [build]
   base = "frontend"
-  Publish = ""
+  Publish = "build"
   Functions = ""
