@@ -8,7 +8,7 @@ import Layout from "../components/layout";
 import ArticlePreview from "../components/article-preview";
 import styles from "./index.module.css";
 import logo from "../components/nyoandnuralogo.png";
-
+import Globe from "../components/interactiveGlobe"
 class RootIndex extends React.Component {
 
   render() {
@@ -21,6 +21,7 @@ class RootIndex extends React.Component {
       <Layout location={this.props.location}>
         <br />
         <div style={{ background: "#fff" }}>
+        <Globe />
           <Helmet title={siteTitle} />
           <div className={styles.hero}>
             <h1 className={styles.landingheader}>
