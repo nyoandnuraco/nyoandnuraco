@@ -20,9 +20,9 @@ export default class ColorPicker extends Component {
     let selectedColor = this.state.sc;
     return (
       <div>
-        <div className="layout-row justify-content-center">
+        <div style={{marginBottom:"0px"}} className="layout-row justify-content-center">
           <div className="card mt-75">
-            <div style={{'backgroundColor': this.state.sc} } className="canvas" data-testid="selectedColor">
+            <div style={{'backgroundColor': this.state.sc,'marginTop':'150px'} } className="canvas" data-testid="selectedColor">
               <p style={{'backgroundColor': this.state.sc} } className="text-center mx-auto px-5">{selectedColor}</p>
             </div>
             <div className="card-actions">

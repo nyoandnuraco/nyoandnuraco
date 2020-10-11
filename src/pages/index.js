@@ -18,8 +18,8 @@ class RootIndex extends React.Component {
 
     return (
       
-      <Layout location={this.props.location}>
-        <br />
+      <Layout className={styles.home} location={this.props.location}>
+        <br /><br />    <br /><br />    <br /><br />
         <div style={{ background: "#fff" }}>
           <Helmet title={siteTitle} />
           <div className={styles.hero}>

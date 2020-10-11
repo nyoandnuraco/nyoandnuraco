@@ -11,6 +11,13 @@
     flex-direction: column;
     margin-bottom:0px;
   }
+  html.home{ 
+    background: url(../pages/AdobeStock_126507566.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
   .landingheader{
     margin:25px;
     font-size:5rem;
