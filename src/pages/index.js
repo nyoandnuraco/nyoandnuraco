@@ -8,7 +8,7 @@ import Layout from "../components/layout";
 import ArticlePreview from "../components/article-preview";
 import styles from "./index.module.css";
 import logo from "../components/nyoandnuralogo.png";
-
+import bgimg from "./AdobeStock_126507566.jpeg";
 class RootIndex extends React.Component {
 
   render() {
@@ -23,22 +23,25 @@ class RootIndex extends React.Component {
         <div style={{ background: "#fff" }}>
           <Helmet title={siteTitle} />
           <div className={styles.hero}>
+          <img className={styles.layoutbgimg} src={bgimg} width="100%" height="100%"/>
             <h1 className={styles.landingheader}>
               NYO & <br />
               NURAH <br /> COMPANY
             </h1>
+        
           </div>
+          <Link className={styles.mainctawrapper} to="/shop/">
+            <button id={styles.maincta} className="btn text-white btn-lg">
+              Shop Now
+            </button>
+          </Link>
           <div className="wrapper">
             <p id={styles.abvfldcpy} className={"article-list"}>
               Must have top notch maintainable and custom made to fit your
               business needs.
             </p>
           </div>
-          <Link to="/shop/">
-            <button id={styles.maincta} className="btn text-white btn-lg">
-              Shop Now
-            </button>
-          </Link>
+       
           <br />
           <br />
           <div className="wrapper">
