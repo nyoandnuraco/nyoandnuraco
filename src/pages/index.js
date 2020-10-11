@@ -25,22 +25,21 @@ class RootIndex extends React.Component {
           <div className={styles.hero}>
           <img className={styles.layoutbgimg} src={bgimg} width="100%" height="100%"/>
             <h1 className={styles.landingheader}>
-              NYO & <br />
+              NYO & 
               NURAH <br /> COMPANY
             </h1>
-        
-          </div>
-          <Link className={styles.mainctawrapper} to="/shop/">
-            <button id={styles.maincta} className="btn text-white btn-lg">
-              Shop Now
-            </button>
-          </Link>
-          <div className="wrapper">
             <p id={styles.abvfldcpy} className={"article-list"}>
               Must have top notch maintainable and custom made to fit your
               business needs.
             </p>
           </div>
+       
+          <Link className={styles.mainctawrapper} to="/shop/">
+            <button id={styles.maincta} className="btn text-white btn-lg">
+              Shop Now
+            </button>
+          </Link>
+      
        
           <br />
           <br />
