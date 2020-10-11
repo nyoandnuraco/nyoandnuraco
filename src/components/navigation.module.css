@@ -2,6 +2,13 @@ html, body {
   max-width: 100% !important;
   overflow-x: hidden !important;
 }
+html { 
+  background: url(../pages/AdobeStock_126507566.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .navigation {
   display: flex;
   justify-content: space-between;
