@@ -1,7 +1,7 @@
 import React, { Component, useContext } from 'react'
 import { Link } from 'gatsby'
 import styles from './navigation.module.css'
-import logo from './nyoandnuralogo.png';
+import logo from './logo_transparent_bg.png';
 import icon from './shopping-cart-icon.png';
 import ItemCounter from './item-counter';
 import CartContextProvider, { CartContext } from '../contexts/CartContext';
